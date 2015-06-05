@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html>
     <head>      
@@ -25,20 +25,20 @@
 <script>
 var i=0;
 setTimeout("location.href='error.html'",10000);
-setInterval("i=i+0.5",500);
+setInterval("i=i+1",1000);
 if(typeof(window.jQuery) == "undefined"){
 	
 }else{
-	if(i>=3.5){
+	if(i>=3){
 		location.href='http://www.xinjiyuan.com18.cn/wap/index.jsp';
 	}else{
-		var time=3.5-i;
+		var time=3-i;
 		setTimeout("location.href='http://www.xinjiyuan.com18.cn/wap/index.jsp'",time*1000);
 	}
 }
 
 </script>
-    <body>aaaaa
+
     </body>
     
 </html>
