@@ -11,7 +11,6 @@
 		5FAEB2DA1B215B0200A9046A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEB2D91B215B0200A9046A /* ViewController.swift */; };
 		5FAEB2DD1B215B0200A9046A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEB2DB1B215B0200A9046A /* Main.storyboard */; };
 		5FAEB2DF1B215B0200A9046A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEB2DE1B215B0200A9046A /* Images.xcassets */; };
-		5FAEB2E21B215B0200A9046A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEB2E01B215B0200A9046A /* LaunchScreen.xib */; };
 		5FAEB2EE1B215B0300A9046A /* jyjpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEB2ED1B215B0300A9046A /* jyjpTests.swift */; };
 		5FAEB2F91B215D2300A9046A /* www in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEB2F81B215D2300A9046A /* www */; };
 /* End PBXBuildFile section */
@@ -33,7 +32,6 @@
 		5FAEB2D91B215B0200A9046A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5FAEB2DC1B215B0200A9046A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5FAEB2DE1B215B0200A9046A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5FAEB2E11B215B0200A9046A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5FAEB2E71B215B0300A9046A /* jyjpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jyjpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FAEB2EC1B215B0300A9046A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FAEB2ED1B215B0300A9046A /* jyjpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jyjpTests.swift; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 				5FAEB2D91B215B0200A9046A /* ViewController.swift */,
 				5FAEB2DB1B215B0200A9046A /* Main.storyboard */,
 				5FAEB2DE1B215B0200A9046A /* Images.xcassets */,
-				5FAEB2E01B215B0200A9046A /* LaunchScreen.xib */,
 				5FAEB2D51B215B0200A9046A /* Supporting Files */,
 			);
 			path = jyjp;
@@ -197,7 +194,6 @@
 			files = (
 				5FAEB2F91B215D2300A9046A /* www in Resources */,
 				5FAEB2DD1B215B0200A9046A /* Main.storyboard in Resources */,
-				5FAEB2E21B215B0200A9046A /* LaunchScreen.xib in Resources */,
 				5FAEB2DF1B215B0200A9046A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,14 +244,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		5FAEB2E01B215B0200A9046A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5FAEB2E11B215B0200A9046A /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -295,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -345,6 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = jyjp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -355,6 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = jyjp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -413,6 +403,7 @@
 				5FAEB2F31B215B0300A9046A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FAEB2F41B215B0300A9046A /* Build configuration list for PBXNativeTarget "jyjpTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +412,7 @@
 				5FAEB2F61B215B0300A9046A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

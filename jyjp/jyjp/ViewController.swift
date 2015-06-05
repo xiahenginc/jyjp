@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 //        webView.loadRequest(request)
 //        
         webView?.opaque = false
-        webView?.backgroundColor = UIColor.blackColor()
+        webView?.backgroundColor = UIColor.clearColor()
         if let path = NSBundle.mainBundle().pathForResource("index", ofType: "html",inDirectory:"www") {
 //            let baseURL = NSURL.fileURLWithPath(path.stringByDeletingLastPathComponent,isDirectory:true)
 //            let requestURL = NSURL(string:path.lastPathComponent,relativeToURL:baseURL)
