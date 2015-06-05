@@ -13,6 +13,8 @@
 		5FAEB2DF1B215B0200A9046A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEB2DE1B215B0200A9046A /* Images.xcassets */; };
 		5FAEB2EE1B215B0300A9046A /* jyjpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEB2ED1B215B0300A9046A /* jyjpTests.swift */; };
 		5FAEB2F91B215D2300A9046A /* www in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEB2F81B215D2300A9046A /* www */; };
+		5FE5C16F1B218AC6003F5E03 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE5C16D1B218AC6003F5E03 /* Default-568h@2x.png */; };
+		5FE5C1701B218AC6003F5E03 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE5C16E1B218AC6003F5E03 /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		5FAEB2EC1B215B0300A9046A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FAEB2ED1B215B0300A9046A /* jyjpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jyjpTests.swift; sourceTree = "<group>"; };
 		5FAEB2F81B215D2300A9046A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		5FE5C16D1B218AC6003F5E03 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5FE5C16E1B218AC6003F5E03 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		5FAEB2D41B215B0200A9046A /* jyjp */ = {
 			isa = PBXGroup;
 			children = (
+				5FE5C16D1B218AC6003F5E03 /* Default-568h@2x.png */,
+				5FE5C16E1B218AC6003F5E03 /* Default@2x.png */,
 				5FAEB2F81B215D2300A9046A /* www */,
 				5FAEB2D71B215B0200A9046A /* AppDelegate.swift */,
 				5FAEB2D91B215B0200A9046A /* ViewController.swift */,
@@ -193,6 +199,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FAEB2F91B215D2300A9046A /* www in Resources */,
+				5FE5C16F1B218AC6003F5E03 /* Default-568h@2x.png in Resources */,
+				5FE5C1701B218AC6003F5E03 /* Default@2x.png in Resources */,
 				5FAEB2DD1B215B0200A9046A /* Main.storyboard in Resources */,
 				5FAEB2DF1B215B0200A9046A /* Images.xcassets in Resources */,
 			);
