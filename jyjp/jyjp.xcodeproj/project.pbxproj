@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16653B371B42D14C008E429C /* www in Resources */ = {isa = PBXBuildFile; fileRef = 16653B361B42D14C008E429C /* www */; };
 		167B7AC91B26F6DA00F56788 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167B7AC71B26F6DA00F56788 /* LaunchScreen.xib */; };
 		5FAEB2D81B215B0200A9046A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEB2D71B215B0200A9046A /* AppDelegate.swift */; };
 		5FAEB2DA1B215B0200A9046A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEB2D91B215B0200A9046A /* ViewController.swift */; };
 		5FAEB2DD1B215B0200A9046A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEB2DB1B215B0200A9046A /* Main.storyboard */; };
 		5FAEB2DF1B215B0200A9046A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEB2DE1B215B0200A9046A /* Images.xcassets */; };
 		5FAEB2EE1B215B0300A9046A /* jyjpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEB2ED1B215B0300A9046A /* jyjpTests.swift */; };
-		5FAEB2F91B215D2300A9046A /* www in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEB2F81B215D2300A9046A /* www */; };
 		5FE5C16F1B218AC6003F5E03 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE5C16D1B218AC6003F5E03 /* Default-568h@2x.png */; };
 		5FE5C1701B218AC6003F5E03 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE5C16E1B218AC6003F5E03 /* Default@2x.png */; };
 /* End PBXBuildFile section */
@@ -29,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16653B361B42D14C008E429C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		167B7AC81B26F6DA00F56788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5FAEB2D21B215B0200A9046A /* jyjp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jyjp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FAEB2D61B215B0200A9046A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		5FAEB2E71B215B0300A9046A /* jyjpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jyjpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FAEB2EC1B215B0300A9046A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FAEB2ED1B215B0300A9046A /* jyjpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jyjpTests.swift; sourceTree = "<group>"; };
-		5FAEB2F81B215D2300A9046A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		5FE5C16D1B218AC6003F5E03 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5FE5C16E1B218AC6003F5E03 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,9 +83,9 @@
 		5FAEB2D41B215B0200A9046A /* jyjp */ = {
 			isa = PBXGroup;
 			children = (
+				16653B361B42D14C008E429C /* www */,
 				5FE5C16D1B218AC6003F5E03 /* Default-568h@2x.png */,
 				5FE5C16E1B218AC6003F5E03 /* Default@2x.png */,
-				5FAEB2F81B215D2300A9046A /* www */,
 				5FAEB2D71B215B0200A9046A /* AppDelegate.swift */,
 				5FAEB2D91B215B0200A9046A /* ViewController.swift */,
 				5FAEB2DB1B215B0200A9046A /* Main.storyboard */,
@@ -201,7 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FAEB2F91B215D2300A9046A /* www in Resources */,
+				16653B371B42D14C008E429C /* www in Resources */,
 				5FE5C16F1B218AC6003F5E03 /* Default-568h@2x.png in Resources */,
 				5FE5C1701B218AC6003F5E03 /* Default@2x.png in Resources */,
 				5FAEB2DD1B215B0200A9046A /* Main.storyboard in Resources */,
