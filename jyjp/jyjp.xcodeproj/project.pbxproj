@@ -170,6 +170,7 @@
 				TargetAttributes = {
 					5FAEB2D11B215B0200A9046A = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = B4Y539L9G9;
 					};
 					5FAEB2E61B215B0300A9046A = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -358,7 +359,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a441f607-f4cc-4d02-b76c-0078aec7a466";
+				PROVISIONING_PROFILE = "6caebb5d-5a77-431c-97e9-eeee59db5d74";
 			};
 			name = Debug;
 		};
@@ -372,7 +373,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a441f607-f4cc-4d02-b76c-0078aec7a466";
+				PROVISIONING_PROFILE = "6caebb5d-5a77-431c-97e9-eeee59db5d74";
 			};
 			name = Release;
 		};
