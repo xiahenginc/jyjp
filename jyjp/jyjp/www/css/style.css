@@ -1,0 +1,52 @@
+/* 
+ *@name: VSO Framework
+ *@author: Hancoaon <Hancoaon@163.com>
+ *@url: http://www.vso.pw
+ *@date: 11-12-2014
+*/
+.doShake_a { position: absolute; left: 50%; margin-left: -50px;margin-top:100px; width: 100px; height: 100px; background: url(yao/yao.png) no-repeat; background-size: 100px 100px; 
+			}
+
+.doShake { position: absolute; left: 50%; margin-left: -50px;margin-top:100px; width: 100px; height: 100px; background: url(yao/yao.png) no-repeat; background-size: 100px 100px; 
+			-webkit-animation: hand_move infinite 0.8s; }
+
+
+@-webkit-keyframes hand_move {
+	0% {
+		-webkit-transform: rotate(0);
+		   -moz-transform: rotate(0);
+			-ms-transform: rotate(0);
+			 -o-transform: rotate(0);
+				transform: rotate(0); }
+				
+				
+	35% {
+		-webkit-transform: rotate(80deg);
+		   -moz-transform: rotate(80deg);
+			-ms-transform: rotate(80deg);
+			 -o-transform: rotate(80deg);
+				transform: rotate(80deg); }
+	
+	50% {
+		-webkit-transform: rotate(0);
+		   -moz-transform: rotate(0);
+			-ms-transform: rotate(0);
+			 -o-transform: rotate(0);
+				transform: rotate(0); }			
+	
+				
+	65% {
+		-webkit-transform: rotate(80deg);
+		   -moz-transform: rotate(80deg);
+			-ms-transform: rotate(80deg);
+			 -o-transform: rotate(80deg);
+				transform: rotate(80deg); }
+				
+	
+	100% {
+		-webkit-transform: rotate(0);
+		   -moz-transform: rotate(0);
+			-ms-transform: rotate(0);
+			 -o-transform: rotate(0);
+				transform: rotate(0); }
+}
