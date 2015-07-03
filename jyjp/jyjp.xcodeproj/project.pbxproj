@@ -7,7 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		164049341B4691AC008EE664 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1640492F1B4691AC008EE664 /* WebViewJavascriptBridge.js.txt */; };
+		164049351B4691AC008EE664 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 164049301B4691AC008EE664 /* WebViewJavascriptBridge.m */; };
+		164049361B4691AC008EE664 /* WebViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 164049331B4691AC008EE664 /* WebViewProxy.m */; };
+		164049381B4691F9008EE664 /* WebBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164049371B4691F9008EE664 /* WebBaseViewController.swift */; };
+		1640493A1B46921A008EE664 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164049391B46921A008EE664 /* TencentOpenAPI.framework */; };
+		1640493C1B46933C008EE664 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1640493B1B46933C008EE664 /* Security.framework */; };
+		1640493E1B469357008EE664 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1640493D1B469357008EE664 /* libiconv.dylib */; };
+		164049401B469360008EE664 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1640493F1B469360008EE664 /* SystemConfiguration.framework */; };
+		164049421B469369008EE664 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164049411B469369008EE664 /* CoreGraphics.framework */; };
+		164049441B469372008EE664 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 164049431B469372008EE664 /* libsqlite3.dylib */; };
+		164049461B46937B008EE664 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164049451B46937B008EE664 /* CoreTelephony.framework */; };
+		164049481B469385008EE664 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 164049471B469385008EE664 /* libstdc++.dylib */; };
+		1640494A1B469391008EE664 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 164049491B469391008EE664 /* libz.dylib */; };
 		167B7AC91B26F6DA00F56788 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167B7AC71B26F6DA00F56788 /* LaunchScreen.xib */; };
+		16AFB4401B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB4371B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift */; };
+		16AFB4411B4696E6009CB2BF /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB4381B4696E6009CB2BF /* Alamofire.swift */; };
+		16AFB4421B4696E6009CB2BF /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB43A1B4696E6009CB2BF /* QRCodeReader.swift */; };
+		16AFB4431B4696E6009CB2BF /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB43B1B4696E6009CB2BF /* QRCodeViewController.swift */; };
+		16AFB4441B4696E6009CB2BF /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB43C1B4696E6009CB2BF /* ReaderOverlayView.swift */; };
+		16AFB4451B4696E6009CB2BF /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB43D1B4696E6009CB2BF /* SwitchCameraButton.swift */; };
+		16AFB4461B4696E6009CB2BF /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB43E1B4696E6009CB2BF /* SwiftyJSON.swift */; };
+		16AFB4471B4696E6009CB2BF /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16AFB43F1B4696E6009CB2BF /* TencentOpenAPI.framework */; };
+		16AFB44A1B469718009CB2BF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB4481B469718009CB2BF /* MapViewController.swift */; };
+		16AFB44B1B469718009CB2BF /* QRCodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB4491B469718009CB2BF /* QRCodeHelper.swift */; };
+		16AFB44D1B469733009CB2BF /* Locationmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB44C1B469733009CB2BF /* Locationmanager.swift */; };
+		16AFB44F1B469772009CB2BF /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB44E1B469772009CB2BF /* WebPageViewController.swift */; };
 		5FAEB2D81B215B0200A9046A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEB2D71B215B0200A9046A /* AppDelegate.swift */; };
 		5FAEB2DA1B215B0200A9046A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEB2D91B215B0200A9046A /* ViewController.swift */; };
 		5FAEB2DD1B215B0200A9046A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEB2DB1B215B0200A9046A /* Main.storyboard */; };
@@ -29,7 +54,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1640492E1B4691AC008EE664 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		1640492F1B4691AC008EE664 /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
+		164049301B4691AC008EE664 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		164049321B4691AC008EE664 /* WebViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewProxy.h; sourceTree = "<group>"; };
+		164049331B4691AC008EE664 /* WebViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewProxy.m; sourceTree = "<group>"; };
+		164049371B4691F9008EE664 /* WebBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebBaseViewController.swift; sourceTree = "<group>"; };
+		164049391B46921A008EE664 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		1640493B1B46933C008EE664 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1640493D1B469357008EE664 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		1640493F1B469360008EE664 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		164049411B469369008EE664 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		164049431B469372008EE664 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		164049451B46937B008EE664 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		164049471B469385008EE664 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		164049491B469391008EE664 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		167B7AC81B26F6DA00F56788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		16AFB4351B469630009CB2BF /* jyjp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "jyjp-Bridging-Header.h"; path = "jyjp/jyjp-Bridging-Header.h"; sourceTree = "<group>"; };
+		16AFB4371B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire-SwiftyJSON.swift"; sourceTree = "<group>"; };
+		16AFB4381B4696E6009CB2BF /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		16AFB43A1B4696E6009CB2BF /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
+		16AFB43B1B4696E6009CB2BF /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		16AFB43C1B4696E6009CB2BF /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
+		16AFB43D1B4696E6009CB2BF /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
+		16AFB43E1B4696E6009CB2BF /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		16AFB43F1B4696E6009CB2BF /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		16AFB4481B469718009CB2BF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		16AFB4491B469718009CB2BF /* QRCodeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeHelper.swift; sourceTree = "<group>"; };
+		16AFB44C1B469733009CB2BF /* Locationmanager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locationmanager.swift; sourceTree = "<group>"; };
+		16AFB44E1B469772009CB2BF /* WebPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
 		5FAEB2D21B215B0200A9046A /* jyjp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jyjp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FAEB2D61B215B0200A9046A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FAEB2D71B215B0200A9046A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +102,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1640494A1B469391008EE664 /* libz.dylib in Frameworks */,
+				164049481B469385008EE664 /* libstdc++.dylib in Frameworks */,
+				164049461B46937B008EE664 /* CoreTelephony.framework in Frameworks */,
+				164049441B469372008EE664 /* libsqlite3.dylib in Frameworks */,
+				164049421B469369008EE664 /* CoreGraphics.framework in Frameworks */,
+				16AFB4471B4696E6009CB2BF /* TencentOpenAPI.framework in Frameworks */,
+				164049401B469360008EE664 /* SystemConfiguration.framework in Frameworks */,
+				1640493E1B469357008EE664 /* libiconv.dylib in Frameworks */,
+				1640493C1B46933C008EE664 /* Security.framework in Frameworks */,
+				1640493A1B46921A008EE664 /* TencentOpenAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,9 +125,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1640492D1B4691AC008EE664 /* WebViewJavascriptBridge */ = {
+			isa = PBXGroup;
+			children = (
+				1640492E1B4691AC008EE664 /* WebViewJavascriptBridge.h */,
+				1640492F1B4691AC008EE664 /* WebViewJavascriptBridge.js.txt */,
+				164049301B4691AC008EE664 /* WebViewJavascriptBridge.m */,
+			);
+			path = WebViewJavascriptBridge;
+			sourceTree = "<group>";
+		};
+		164049311B4691AC008EE664 /* WebViewProxy */ = {
+			isa = PBXGroup;
+			children = (
+				164049321B4691AC008EE664 /* WebViewProxy.h */,
+				164049331B4691AC008EE664 /* WebViewProxy.m */,
+			);
+			path = WebViewProxy;
+			sourceTree = "<group>";
+		};
+		16AFB4361B4696E6009CB2BF /* thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				16AFB4371B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift */,
+				16AFB4381B4696E6009CB2BF /* Alamofire.swift */,
+				16AFB4391B4696E6009CB2BF /* QRCodeReader */,
+				16AFB43E1B4696E6009CB2BF /* SwiftyJSON.swift */,
+				16AFB43F1B4696E6009CB2BF /* TencentOpenAPI.framework */,
+			);
+			path = thirdparty;
+			sourceTree = "<group>";
+		};
+		16AFB4391B4696E6009CB2BF /* QRCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				16AFB43A1B4696E6009CB2BF /* QRCodeReader.swift */,
+				16AFB43B1B4696E6009CB2BF /* QRCodeViewController.swift */,
+				16AFB43C1B4696E6009CB2BF /* ReaderOverlayView.swift */,
+				16AFB43D1B4696E6009CB2BF /* SwitchCameraButton.swift */,
+			);
+			path = QRCodeReader;
+			sourceTree = "<group>";
+		};
 		5FAEB2C91B215B0200A9046A = {
 			isa = PBXGroup;
 			children = (
+				16AFB4351B469630009CB2BF /* jyjp-Bridging-Header.h */,
+				164049491B469391008EE664 /* libz.dylib */,
+				164049471B469385008EE664 /* libstdc++.dylib */,
+				164049451B46937B008EE664 /* CoreTelephony.framework */,
+				164049431B469372008EE664 /* libsqlite3.dylib */,
+				164049411B469369008EE664 /* CoreGraphics.framework */,
+				1640493F1B469360008EE664 /* SystemConfiguration.framework */,
+				1640493D1B469357008EE664 /* libiconv.dylib */,
+				1640493B1B46933C008EE664 /* Security.framework */,
+				164049391B46921A008EE664 /* TencentOpenAPI.framework */,
+				164049371B4691F9008EE664 /* WebBaseViewController.swift */,
+				16AFB44E1B469772009CB2BF /* WebPageViewController.swift */,
+				16AFB44C1B469733009CB2BF /* Locationmanager.swift */,
+				16AFB4481B469718009CB2BF /* MapViewController.swift */,
+				16AFB4491B469718009CB2BF /* QRCodeHelper.swift */,
+				16AFB4361B4696E6009CB2BF /* thirdparty */,
 				5FAEB2D41B215B0200A9046A /* jyjp */,
 				5FAEB2EA1B215B0300A9046A /* jyjpTests */,
 				5FAEB2D31B215B0200A9046A /* Products */,
@@ -85,6 +206,8 @@
 			children = (
 				5FE5C16D1B218AC6003F5E03 /* Default-568h@2x.png */,
 				5FE5C16E1B218AC6003F5E03 /* Default@2x.png */,
+				1640492D1B4691AC008EE664 /* WebViewJavascriptBridge */,
+				164049311B4691AC008EE664 /* WebViewProxy */,
 				5FAEB2F81B215D2300A9046A /* www */,
 				5FAEB2D71B215B0200A9046A /* AppDelegate.swift */,
 				5FAEB2D91B215B0200A9046A /* ViewController.swift */,
@@ -206,6 +329,7 @@
 				5FE5C16F1B218AC6003F5E03 /* Default-568h@2x.png in Resources */,
 				5FE5C1701B218AC6003F5E03 /* Default@2x.png in Resources */,
 				5FAEB2DD1B215B0200A9046A /* Main.storyboard in Resources */,
+				164049341B4691AC008EE664 /* WebViewJavascriptBridge.js.txt in Resources */,
 				167B7AC91B26F6DA00F56788 /* LaunchScreen.xib in Resources */,
 				5FAEB2DF1B215B0200A9046A /* Images.xcassets in Resources */,
 			);
@@ -225,8 +349,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16AFB44F1B469772009CB2BF /* WebPageViewController.swift in Sources */,
+				16AFB4441B4696E6009CB2BF /* ReaderOverlayView.swift in Sources */,
+				164049361B4691AC008EE664 /* WebViewProxy.m in Sources */,
 				5FAEB2DA1B215B0200A9046A /* ViewController.swift in Sources */,
+				16AFB4461B4696E6009CB2BF /* SwiftyJSON.swift in Sources */,
+				164049351B4691AC008EE664 /* WebViewJavascriptBridge.m in Sources */,
 				5FAEB2D81B215B0200A9046A /* AppDelegate.swift in Sources */,
+				16AFB44A1B469718009CB2BF /* MapViewController.swift in Sources */,
+				16AFB4401B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift in Sources */,
+				164049381B4691F9008EE664 /* WebBaseViewController.swift in Sources */,
+				16AFB44D1B469733009CB2BF /* Locationmanager.swift in Sources */,
+				16AFB44B1B469718009CB2BF /* QRCodeHelper.swift in Sources */,
+				16AFB4431B4696E6009CB2BF /* QRCodeViewController.swift in Sources */,
+				16AFB4421B4696E6009CB2BF /* QRCodeReader.swift in Sources */,
+				16AFB4451B4696E6009CB2BF /* SwitchCameraButton.swift in Sources */,
+				16AFB4411B4696E6009CB2BF /* Alamofire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,12 +492,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Nanjing Xiaheng Network System Co., Ltd. (24N474AU9T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nanjing Xiaheng Network System Co., Ltd. (24N474AU9T)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: huaming xia (8GYC4WW644)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/thirdparty",
+				);
 				INFOPLIST_FILE = jyjp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6caebb5d-5a77-431c-97e9-eeee59db5d74";
+				SWIFT_OBJC_BRIDGING_HEADER = "jyjp/jyjp-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -369,11 +514,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Nanjing Xiaheng Network System Co., Ltd. (24N474AU9T)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nanjing Xiaheng Network System Co., Ltd. (24N474AU9T)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/thirdparty",
+				);
 				INFOPLIST_FILE = jyjp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6caebb5d-5a77-431c-97e9-eeee59db5d74";
+				SWIFT_OBJC_BRIDGING_HEADER = "jyjp/jyjp-Bridging-Header.h";
 			};
 			name = Release;
 		};
