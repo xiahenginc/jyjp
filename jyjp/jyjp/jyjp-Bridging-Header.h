@@ -10,6 +10,7 @@
 #define jyjp_jyjp_Bridging_Header_h
 #import "WebViewProxy.h"
 #import "WebViewJavascriptBridge.h"
+#import "WXApi.h"
 #import <TencentOpenAPI/TencentOAuth.h>
 
 #endif

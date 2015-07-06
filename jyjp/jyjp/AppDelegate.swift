@@ -9,13 +9,15 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,WXApiDelegate {
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        WXApi.registerApp("wx8ff03d60decfa26a")
         return true
     }
 
@@ -40,12 +42,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    func onReq(req: BaseReq!) {
+        println("onReq called")
+    }
+    func onResp(resp: BaseResp!) {
+        println("onResp called")
+    }
 
     func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool{
-        return TencentOAuth.HandleOpenURL(url)
+        if url.scheme == "wx8ff03d60decfa26a" {
+            return WXApi.handleOpenURL(url, delegate: self)
+        }
+        else if url.scheme == "tencent101220859" {
+            return TencentOAuth.HandleOpenURL(url)
+        }
+        return true
+        
     }
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
-        return TencentOAuth.HandleOpenURL(url)
+        if url.scheme == "wx8ff03d60decfa26a" {
+            return WXApi.handleOpenURL(url, delegate: self)
+        }
+        else if url.scheme == "tencent101220859" {
+            return TencentOAuth.HandleOpenURL(url)
+        }
+        return true
     }
 }
 
