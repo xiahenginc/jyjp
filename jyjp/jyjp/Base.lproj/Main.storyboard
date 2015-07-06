@@ -26,10 +26,16 @@
                         <constraints>
                             <constraint firstItem="yCm-xo-HgC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="5AG-D2-p6j"/>
                             <constraint firstAttribute="trailing" secondItem="yCm-xo-HgC" secondAttribute="trailing" id="5lC-s4-Utm"/>
+                            <constraint firstItem="yCm-xo-HgC" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Em0-vd-gPs"/>
                             <constraint firstItem="yCm-xo-HgC" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="KKQ-bW-7tt"/>
                             <constraint firstAttribute="centerX" secondItem="yCm-xo-HgC" secondAttribute="centerX" id="jx8-Y1-FWg"/>
                             <constraint firstAttribute="bottom" secondItem="yCm-xo-HgC" secondAttribute="bottom" id="pix-zH-IWl"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KKQ-bW-7tt"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="webView" destination="yCm-xo-HgC" id="k1P-dL-1YW"/>
@@ -111,8 +117,14 @@
                             <constraint firstAttribute="trailing" secondItem="PVQ-AR-gP8" secondAttribute="trailing" id="GIr-qb-Rnv"/>
                             <constraint firstAttribute="bottom" secondItem="PVQ-AR-gP8" secondAttribute="bottom" id="Hmr-Tq-PIi"/>
                             <constraint firstItem="PVQ-AR-gP8" firstAttribute="leading" secondItem="Z4D-6K-kir" secondAttribute="leading" id="KaU-Ma-1BQ"/>
+                            <constraint firstItem="PVQ-AR-gP8" firstAttribute="top" secondItem="OzY-V4-OkI" secondAttribute="bottom" id="aHq-5n-2M6"/>
                             <constraint firstItem="PVQ-AR-gP8" firstAttribute="top" secondItem="OzY-V4-OkI" secondAttribute="top" id="hCR-DY-qw9"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hCR-DY-qw9"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="aIc-u4-Fxd"/>
                     <connections>
