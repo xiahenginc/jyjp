@@ -36,7 +36,7 @@ class ViewController: UIViewController {
 //        }
 
     }
-    var url = "http://www.grw.com18.cn/wap/"
+    var url = "http://www.guorouwang.com/wap_ios/index.jsp"
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
