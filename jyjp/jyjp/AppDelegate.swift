@@ -53,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,WXApiDelegate {
         if url.scheme == "wx8ff03d60decfa26a" {
             return WXApi.handleOpenURL(url, delegate: self)
         }
-        else if url.scheme == "tencent101220859" {
+        else if url.scheme == "tencent1104714921" {
             return TencentOAuth.HandleOpenURL(url)
         }
         return true
@@ -63,7 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,WXApiDelegate {
         if url.scheme == "wx8ff03d60decfa26a" {
             return WXApi.handleOpenURL(url, delegate: self)
         }
-        else if url.scheme == "tencent101220859" {
+        else if url.scheme == "tencent1104714921" {
             return TencentOAuth.HandleOpenURL(url)
         }
         return true

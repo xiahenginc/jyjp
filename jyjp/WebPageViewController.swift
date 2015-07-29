@@ -11,7 +11,7 @@ import UIKit
 class WebPageViewController: WebBaseViewController {
 
     override func viewDidLoad() {
-        url = "http://www.grw.com18.cn/wap/"
+        url = "http://www.guorouwang.com/wap_ios/"
         myWebView = self.webView
         super.viewDidLoad()
     }
