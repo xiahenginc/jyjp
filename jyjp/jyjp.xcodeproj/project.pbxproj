@@ -33,6 +33,7 @@
 		16AFB44B1B469718009CB2BF /* QRCodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB4491B469718009CB2BF /* QRCodeHelper.swift */; };
 		16AFB44D1B469733009CB2BF /* Locationmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB44C1B469733009CB2BF /* Locationmanager.swift */; };
 		16AFB44F1B469772009CB2BF /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB44E1B469772009CB2BF /* WebPageViewController.swift */; };
+		16C7E6FB1B6A2DC000F26D26 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7E6FA1B6A2DC000F26D26 /* Location.swift */; };
 		16F3BEE41B4A659F00D23D3D /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F3BEE11B4A659F00D23D3D /* libWeChatSDK.a */; };
 		5FAEB2D81B215B0200A9046A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEB2D71B215B0200A9046A /* AppDelegate.swift */; };
 		5FAEB2DA1B215B0200A9046A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEB2D91B215B0200A9046A /* ViewController.swift */; };
@@ -84,6 +85,7 @@
 		16AFB4491B469718009CB2BF /* QRCodeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeHelper.swift; sourceTree = "<group>"; };
 		16AFB44C1B469733009CB2BF /* Locationmanager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locationmanager.swift; sourceTree = "<group>"; };
 		16AFB44E1B469772009CB2BF /* WebPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
+		16C7E6FA1B6A2DC000F26D26 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		16F3BEE11B4A659F00D23D3D /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		16F3BEE21B4A659F00D23D3D /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		16F3BEE31B4A659F00D23D3D /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		5FAEB2C91B215B0200A9046A = {
 			isa = PBXGroup;
 			children = (
+				16C7E6FA1B6A2DC000F26D26 /* Location.swift */,
 				16F3BEE01B4A659F00D23D3D /* SDKExport */,
 				16AFB4351B469630009CB2BF /* jyjp-Bridging-Header.h */,
 				164049491B469391008EE664 /* libz.dylib */,
@@ -311,6 +314,11 @@
 					5FAEB2D11B215B0200A9046A = {
 						CreatedOnToolsVersion = 6.3.2;
 						DevelopmentTeam = 24N474AU9T;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					5FAEB2E61B215B0300A9046A = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -371,6 +379,7 @@
 				164049361B4691AC008EE664 /* WebViewProxy.m in Sources */,
 				5FAEB2DA1B215B0200A9046A /* ViewController.swift in Sources */,
 				16AFB4461B4696E6009CB2BF /* SwiftyJSON.swift in Sources */,
+				16C7E6FB1B6A2DC000F26D26 /* Location.swift in Sources */,
 				164049351B4691AC008EE664 /* WebViewJavascriptBridge.m in Sources */,
 				5FAEB2D81B215B0200A9046A /* AppDelegate.swift in Sources */,
 				16AFB44A1B469718009CB2BF /* MapViewController.swift in Sources */,
@@ -524,7 +533,7 @@
 				);
 				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6caebb5d-5a77-431c-97e9-eeee59db5d74";
+				PROVISIONING_PROFILE = "3a5a036c-8718-41bf-afc3-857c92dfa0af";
 				SWIFT_OBJC_BRIDGING_HEADER = "jyjp/jyjp-Bridging-Header.h";
 			};
 			name = Debug;
@@ -549,7 +558,7 @@
 				);
 				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6caebb5d-5a77-431c-97e9-eeee59db5d74";
+				PROVISIONING_PROFILE = "3a5a036c-8718-41bf-afc3-857c92dfa0af";
 				SWIFT_OBJC_BRIDGING_HEADER = "jyjp/jyjp-Bridging-Header.h";
 			};
 			name = Release;

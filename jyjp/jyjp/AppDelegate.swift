@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,WXApiDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
+        Location.sharedInstance.requestAuthorization()
         WXApi.registerApp("wx8ff03d60decfa26a")
         return true
     }
@@ -53,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,WXApiDelegate {
         if url.scheme == "wx8ff03d60decfa26a" {
             return WXApi.handleOpenURL(url, delegate: self)
         }
-        else if url.scheme == "tencent1104714921" {
+        else if url.scheme == "tencent101220859" {
             return TencentOAuth.HandleOpenURL(url)
         }
         return true
@@ -63,7 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,WXApiDelegate {
         if url.scheme == "wx8ff03d60decfa26a" {
             return WXApi.handleOpenURL(url, delegate: self)
         }
-        else if url.scheme == "tencent1104714921" {
+        else if url.scheme == "tencent101220859" {
             return TencentOAuth.HandleOpenURL(url)
         }
         return true

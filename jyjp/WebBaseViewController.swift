@@ -250,6 +250,7 @@ class WebBaseViewController: UIViewController,TencentSessionDelegate {
     }
    
     func loadurl(){
+        println("\(url)")
         let requestURL = NSURL(string:url)
         let request = NSURLRequest(URL: requestURL!)
         myWebView?.loadRequest(request)
