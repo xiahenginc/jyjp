@@ -20,6 +20,8 @@
 		164049461B46937B008EE664 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164049451B46937B008EE664 /* CoreTelephony.framework */; };
 		164049481B469385008EE664 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 164049471B469385008EE664 /* libstdc++.dylib */; };
 		1640494A1B469391008EE664 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 164049491B469391008EE664 /* libz.dylib */; };
+		1660C50A1B6AF8BA005D9D3D /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1660C5081B6AF8BA005D9D3D /* AlipaySDK.bundle */; };
+		1660C50B1B6AF8BA005D9D3D /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1660C5091B6AF8BA005D9D3D /* AlipaySDK.framework */; };
 		167B7AC91B26F6DA00F56788 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167B7AC71B26F6DA00F56788 /* LaunchScreen.xib */; };
 		16AFB4401B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB4371B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift */; };
 		16AFB4411B4696E6009CB2BF /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB4381B4696E6009CB2BF /* Alamofire.swift */; };
@@ -33,7 +35,6 @@
 		16AFB44B1B469718009CB2BF /* QRCodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB4491B469718009CB2BF /* QRCodeHelper.swift */; };
 		16AFB44D1B469733009CB2BF /* Locationmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB44C1B469733009CB2BF /* Locationmanager.swift */; };
 		16AFB44F1B469772009CB2BF /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB44E1B469772009CB2BF /* WebPageViewController.swift */; };
-		16C7E6FB1B6A2DC000F26D26 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7E6FA1B6A2DC000F26D26 /* Location.swift */; };
 		16F3BEE41B4A659F00D23D3D /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F3BEE11B4A659F00D23D3D /* libWeChatSDK.a */; };
 		5FAEB2D81B215B0200A9046A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEB2D71B215B0200A9046A /* AppDelegate.swift */; };
 		5FAEB2DA1B215B0200A9046A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEB2D91B215B0200A9046A /* ViewController.swift */; };
@@ -71,6 +72,8 @@
 		164049451B46937B008EE664 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		164049471B469385008EE664 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		164049491B469391008EE664 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1660C5081B6AF8BA005D9D3D /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		1660C5091B6AF8BA005D9D3D /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		167B7AC81B26F6DA00F56788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		16AFB4351B469630009CB2BF /* jyjp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "jyjp-Bridging-Header.h"; path = "jyjp/jyjp-Bridging-Header.h"; sourceTree = "<group>"; };
 		16AFB4371B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire-SwiftyJSON.swift"; sourceTree = "<group>"; };
@@ -85,7 +88,6 @@
 		16AFB4491B469718009CB2BF /* QRCodeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeHelper.swift; sourceTree = "<group>"; };
 		16AFB44C1B469733009CB2BF /* Locationmanager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locationmanager.swift; sourceTree = "<group>"; };
 		16AFB44E1B469772009CB2BF /* WebPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
-		16C7E6FA1B6A2DC000F26D26 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		16F3BEE11B4A659F00D23D3D /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		16F3BEE21B4A659F00D23D3D /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		16F3BEE31B4A659F00D23D3D /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				164049481B469385008EE664 /* libstdc++.dylib in Frameworks */,
 				164049461B46937B008EE664 /* CoreTelephony.framework in Frameworks */,
 				164049441B469372008EE664 /* libsqlite3.dylib in Frameworks */,
+				1660C50B1B6AF8BA005D9D3D /* AlipaySDK.framework in Frameworks */,
 				164049421B469369008EE664 /* CoreGraphics.framework in Frameworks */,
 				16AFB4471B4696E6009CB2BF /* TencentOpenAPI.framework in Frameworks */,
 				164049401B469360008EE664 /* SystemConfiguration.framework in Frameworks */,
@@ -188,7 +191,8 @@
 		5FAEB2C91B215B0200A9046A = {
 			isa = PBXGroup;
 			children = (
-				16C7E6FA1B6A2DC000F26D26 /* Location.swift */,
+				1660C5081B6AF8BA005D9D3D /* AlipaySDK.bundle */,
+				1660C5091B6AF8BA005D9D3D /* AlipaySDK.framework */,
 				16F3BEE01B4A659F00D23D3D /* SDKExport */,
 				16AFB4351B469630009CB2BF /* jyjp-Bridging-Header.h */,
 				164049491B469391008EE664 /* libz.dylib */,
@@ -352,6 +356,7 @@
 			files = (
 				5FAEB2F91B215D2300A9046A /* www in Resources */,
 				5FE5C16F1B218AC6003F5E03 /* Default-568h@2x.png in Resources */,
+				1660C50A1B6AF8BA005D9D3D /* AlipaySDK.bundle in Resources */,
 				5FE5C1701B218AC6003F5E03 /* Default@2x.png in Resources */,
 				5FAEB2DD1B215B0200A9046A /* Main.storyboard in Resources */,
 				164049341B4691AC008EE664 /* WebViewJavascriptBridge.js.txt in Resources */,
@@ -379,7 +384,6 @@
 				164049361B4691AC008EE664 /* WebViewProxy.m in Sources */,
 				5FAEB2DA1B215B0200A9046A /* ViewController.swift in Sources */,
 				16AFB4461B4696E6009CB2BF /* SwiftyJSON.swift in Sources */,
-				16C7E6FB1B6A2DC000F26D26 /* Location.swift in Sources */,
 				164049351B4691AC008EE664 /* WebViewJavascriptBridge.m in Sources */,
 				5FAEB2D81B215B0200A9046A /* AppDelegate.swift in Sources */,
 				16AFB44A1B469718009CB2BF /* MapViewController.swift in Sources */,
