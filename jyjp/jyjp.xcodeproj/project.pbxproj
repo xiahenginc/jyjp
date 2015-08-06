@@ -37,7 +37,6 @@
 		16AFB44F1B469772009CB2BF /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB44E1B469772009CB2BF /* WebPageViewController.swift */; };
 		16F3BEE41B4A659F00D23D3D /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F3BEE11B4A659F00D23D3D /* libWeChatSDK.a */; };
 		5FAEB2D81B215B0200A9046A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEB2D71B215B0200A9046A /* AppDelegate.swift */; };
-		5FAEB2DA1B215B0200A9046A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEB2D91B215B0200A9046A /* ViewController.swift */; };
 		5FAEB2DD1B215B0200A9046A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEB2DB1B215B0200A9046A /* Main.storyboard */; };
 		5FAEB2DF1B215B0200A9046A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEB2DE1B215B0200A9046A /* Images.xcassets */; };
 		5FAEB2EE1B215B0300A9046A /* jyjpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEB2ED1B215B0300A9046A /* jyjpTests.swift */; };
@@ -94,7 +93,6 @@
 		5FAEB2D21B215B0200A9046A /* jyjp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jyjp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FAEB2D61B215B0200A9046A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FAEB2D71B215B0200A9046A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5FAEB2D91B215B0200A9046A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5FAEB2DC1B215B0200A9046A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5FAEB2DE1B215B0200A9046A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5FAEB2E71B215B0300A9046A /* jyjpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jyjpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -234,7 +232,6 @@
 				164049311B4691AC008EE664 /* WebViewProxy */,
 				5FAEB2F81B215D2300A9046A /* www */,
 				5FAEB2D71B215B0200A9046A /* AppDelegate.swift */,
-				5FAEB2D91B215B0200A9046A /* ViewController.swift */,
 				5FAEB2DB1B215B0200A9046A /* Main.storyboard */,
 				5FAEB2DE1B215B0200A9046A /* Images.xcassets */,
 				167B7AC71B26F6DA00F56788 /* LaunchScreen.xib */,
@@ -377,7 +374,6 @@
 				16AFB44F1B469772009CB2BF /* WebPageViewController.swift in Sources */,
 				16AFB4441B4696E6009CB2BF /* ReaderOverlayView.swift in Sources */,
 				164049361B4691AC008EE664 /* WebViewProxy.m in Sources */,
-				5FAEB2DA1B215B0200A9046A /* ViewController.swift in Sources */,
 				16AFB4461B4696E6009CB2BF /* SwiftyJSON.swift in Sources */,
 				164049351B4691AC008EE664 /* WebViewJavascriptBridge.m in Sources */,
 				5FAEB2D81B215B0200A9046A /* AppDelegate.swift in Sources */,
