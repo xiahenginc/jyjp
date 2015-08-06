@@ -21,6 +21,8 @@
 		164049481B469385008EE664 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 164049471B469385008EE664 /* libstdc++.dylib */; };
 		1640494A1B469391008EE664 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 164049491B469391008EE664 /* libz.dylib */; };
 		167B7AC91B26F6DA00F56788 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167B7AC71B26F6DA00F56788 /* LaunchScreen.xib */; };
+		16AB44351B72EC7D00C56B8C /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 16AB44331B72EC7D00C56B8C /* AlipaySDK.bundle */; };
+		16AB44361B72EC7D00C56B8C /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16AB44341B72EC7D00C56B8C /* AlipaySDK.framework */; };
 		16AFB4401B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB4371B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift */; };
 		16AFB4411B4696E6009CB2BF /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB4381B4696E6009CB2BF /* Alamofire.swift */; };
 		16AFB4421B4696E6009CB2BF /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB43A1B4696E6009CB2BF /* QRCodeReader.swift */; };
@@ -71,6 +73,8 @@
 		164049471B469385008EE664 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		164049491B469391008EE664 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		167B7AC81B26F6DA00F56788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		16AB44331B72EC7D00C56B8C /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		16AB44341B72EC7D00C56B8C /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		16AFB4351B469630009CB2BF /* jyjp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "jyjp-Bridging-Header.h"; path = "jyjp/jyjp-Bridging-Header.h"; sourceTree = "<group>"; };
 		16AFB4371B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire-SwiftyJSON.swift"; sourceTree = "<group>"; };
 		16AFB4381B4696E6009CB2BF /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 				164049481B469385008EE664 /* libstdc++.dylib in Frameworks */,
 				164049461B46937B008EE664 /* CoreTelephony.framework in Frameworks */,
 				164049441B469372008EE664 /* libsqlite3.dylib in Frameworks */,
+				16AB44361B72EC7D00C56B8C /* AlipaySDK.framework in Frameworks */,
 				164049421B469369008EE664 /* CoreGraphics.framework in Frameworks */,
 				16AFB4471B4696E6009CB2BF /* TencentOpenAPI.framework in Frameworks */,
 				164049401B469360008EE664 /* SystemConfiguration.framework in Frameworks */,
@@ -186,6 +191,8 @@
 		5FAEB2C91B215B0200A9046A = {
 			isa = PBXGroup;
 			children = (
+				16AB44331B72EC7D00C56B8C /* AlipaySDK.bundle */,
+				16AB44341B72EC7D00C56B8C /* AlipaySDK.framework */,
 				16F3BEE01B4A659F00D23D3D /* SDKExport */,
 				16AFB4351B469630009CB2BF /* jyjp-Bridging-Header.h */,
 				164049491B469391008EE664 /* libz.dylib */,
@@ -344,6 +351,7 @@
 			files = (
 				5FAEB2F91B215D2300A9046A /* www in Resources */,
 				5FE5C16F1B218AC6003F5E03 /* Default-568h@2x.png in Resources */,
+				16AB44351B72EC7D00C56B8C /* AlipaySDK.bundle in Resources */,
 				5FE5C1701B218AC6003F5E03 /* Default@2x.png in Resources */,
 				5FAEB2DD1B215B0200A9046A /* Main.storyboard in Resources */,
 				164049341B4691AC008EE664 /* WebViewJavascriptBridge.js.txt in Resources */,

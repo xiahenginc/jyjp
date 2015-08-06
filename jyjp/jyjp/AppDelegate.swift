@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+typealias onWxLoginResult = (JSON!) ->Void
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,WXApiDelegate {
 
@@ -59,6 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,WXApiDelegate {
         return true
         
     }
+    var alipayResult:onWxLoginResult?
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
         if url.scheme == "wx8ff03d60decfa26a" {
             return WXApi.handleOpenURL(url, delegate: self)
@@ -66,7 +67,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate,WXApiDelegate {
         else if url.scheme == "tencent1104714921" {
             return TencentOAuth.HandleOpenURL(url)
         }
+        if url.host == "safepay" {
+            AlipaySDK.defaultService().processOrderWithPaymentResult(url, standbyCallback: {(result) -> Void in
+                print(result as NSDictionary)
+                
+                var resultTxt:String!="failed"
+                var txt:String! = "支付失败"
+                if (result != nil) {
+                    print("\(result)")
+                    txt = result["memo"] as! String
+                    var status = result["resultStatus"] as! NSObject
+                    if ("\(status)" == "9000") {
+                        
+                        resultTxt = "success"
+                    }
+                }
+                else{
+                    txt =  "无法获取结果"
+                }
+                
+                let jsonRes = JSON(["type":"res","param1":resultTxt,"param2":txt])
+                self.alipayResult?(jsonRes)
+                
+            })
+            return true
+        }
         return true
+
     }
 }
 
