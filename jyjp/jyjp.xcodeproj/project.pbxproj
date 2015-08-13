@@ -71,6 +71,8 @@
 		164049451B46937B008EE664 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		164049471B469385008EE664 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		164049491B469391008EE664 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		16587DAC1B734E6C009ADC1A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		16587DAD1B734E6C009ADC1A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		167B7AC81B26F6DA00F56788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		16AB44331B72EC7D00C56B8C /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		16AB44341B72EC7D00C56B8C /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
@@ -412,6 +414,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				167B7AC81B26F6DA00F56788 /* Base */,
+				16587DAD1B734E6C009ADC1A /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5FAEB2DC1B215B0200A9046A /* Base */,
+				16587DAC1B734E6C009ADC1A /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -528,7 +532,7 @@
 				);
 				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6caebb5d-5a77-431c-97e9-eeee59db5d74";
+				PROVISIONING_PROFILE = "28bacab7-f0e6-451a-8182-3f86c2629fab";
 				SWIFT_OBJC_BRIDGING_HEADER = "jyjp/jyjp-Bridging-Header.h";
 			};
 			name = Debug;
@@ -553,7 +557,7 @@
 				);
 				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6caebb5d-5a77-431c-97e9-eeee59db5d74";
+				PROVISIONING_PROFILE = "28bacab7-f0e6-451a-8182-3f86c2629fab";
 				SWIFT_OBJC_BRIDGING_HEADER = "jyjp/jyjp-Bridging-Header.h";
 			};
 			name = Release;
