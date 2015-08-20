@@ -125,7 +125,6 @@
 		16AFB43C1B4696E6009CB2BF /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
 		16AFB43D1B4696E6009CB2BF /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
 		16AFB43E1B4696E6009CB2BF /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		16AFB43F1B4696E6009CB2BF /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		16AFB4481B469718009CB2BF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		16AFB4491B469718009CB2BF /* QRCodeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeHelper.swift; sourceTree = "<group>"; };
 		16AFB44C1B469733009CB2BF /* Locationmanager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locationmanager.swift; sourceTree = "<group>"; };
@@ -292,7 +291,6 @@
 				16AFB4381B4696E6009CB2BF /* Alamofire.swift */,
 				16AFB4391B4696E6009CB2BF /* QRCodeReader */,
 				16AFB43E1B4696E6009CB2BF /* SwiftyJSON.swift */,
-				16AFB43F1B4696E6009CB2BF /* TencentOpenAPI.framework */,
 			);
 			path = thirdparty;
 			sourceTree = "<group>";
