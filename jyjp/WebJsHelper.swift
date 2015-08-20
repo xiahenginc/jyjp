@@ -247,7 +247,7 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
         //1.创建分享参数
         var shareParames = NSMutableDictionary()
         shareParames.SSDKSetupShareParamsByText("分享内容",
-            images : UIImage(named: "line.png"),
+            images : UIImage(named: "Default@2x.png"),
             url : NSURL(string:"http://www.gourouwang.com"),
             title : "分享标题",
             type : SSDKContentType.Auto)

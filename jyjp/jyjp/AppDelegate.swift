@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,WXApiDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
+        _setupShareSDK()
         WXApi.registerApp("wx388f804d2a9cb9b4")
         return true
     }
