@@ -140,7 +140,16 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
         bridge?.registerHandler("sharesdk" ,handler: {
             data, responseCallback in
             //MapViewController
-            self.ShowShareMenu(vc)
+            let json = JSON(data)
+            var titlestr = ""
+            var contentstr = ""
+            if let title = json["param1"].string {
+                titlestr = title
+            }
+            if let content = json["param2"].string{
+                contentstr = content
+            }
+            self.ShowShareMenu(vc,title: titlestr,content: contentstr)
         })
 
         //--------------------------------------------------------------------
@@ -242,14 +251,14 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
     /**
     * 显示分享菜单示例
     */
-    func ShowShareMenu(vc:WebBaseViewController?) {
+    func ShowShareMenu(vc:WebBaseViewController?,title:String?,content:String?) {
         
         //1.创建分享参数
         var shareParames = NSMutableDictionary()
-        shareParames.SSDKSetupShareParamsByText("分享内容",
+        shareParames.SSDKSetupShareParamsByText(content,
             images : UIImage(named: "Default@2x.png"),
             url : NSURL(string:"http://www.gourouwang.com"),
-            title : "分享标题",
+            title : title,
             type : SSDKContentType.Auto)
         //2.进行分享
         ShareSDK.showShareActionSheet(vc?.view, items: nil, shareParams: shareParames) { (state : SSDKResponseState, platformType : SSDKPlatformType, userdata : [NSObject : AnyObject]!, contentEnity : SSDKContentEntity!, error : NSError!, Bool end) -> Void in
