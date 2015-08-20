@@ -143,13 +143,19 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
             let json = JSON(data)
             var titlestr = ""
             var contentstr = ""
-            if let title = json["param1"].string {
-                titlestr = title
+            var urlstr = "http://www.guorouwang"
+            if let param1 = json["param1"].string {
+
+                var data = param1.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)
+                var paramjson = NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers, error: nil) as! NSDictionary
+             
+                titlestr = paramjson["title"] as! String
+                contentstr = paramjson["content"] as! String
+                urlstr = paramjson["url"] as! String
+                println("title \(titlestr),contentstr:\(contentstr),urlstr:\(urlstr)")
             }
-            if let content = json["param2"].string{
-                contentstr = content
-            }
-            self.ShowShareMenu(vc,title: titlestr,content: contentstr)
+
+            self.ShowShareMenu(vc,title: titlestr,content: contentstr,url:urlstr)
         })
 
         //--------------------------------------------------------------------
@@ -251,13 +257,13 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
     /**
     * 显示分享菜单示例
     */
-    func ShowShareMenu(vc:WebBaseViewController?,title:String?,content:String?) {
+    func ShowShareMenu(vc:WebBaseViewController?,title:String?,content:String?,url:String?) {
         
         //1.创建分享参数
         var shareParames = NSMutableDictionary()
         shareParames.SSDKSetupShareParamsByText(content,
             images : UIImage(named: "Default@2x.png"),
-            url : NSURL(string:"http://www.gourouwang.com"),
+            url : NSURL(string:url!),
             title : title,
             type : SSDKContentType.Auto)
         //2.进行分享
