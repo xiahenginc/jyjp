@@ -143,6 +143,7 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
             let json = JSON(data)
             var titlestr = ""
             var contentstr = ""
+            var urlimg = ""
             var urlstr = "http://www.guorouwang"
             if let param1 = json["param1"].string {
 
@@ -152,10 +153,11 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
                 titlestr = paramjson["title"] as! String
                 contentstr = paramjson["content"] as! String
                 urlstr = paramjson["url"] as! String
-                println("title \(titlestr),contentstr:\(contentstr),urlstr:\(urlstr)")
+                urlimg = paramjson["imageurl"] as! String
+                println("title \(titlestr),contentstr:\(contentstr),urlstr:\(urlstr),urlimg:\(urlimg)")
             }
 
-            self.ShowShareMenu(vc,title: titlestr,content: contentstr,url:urlstr)
+            self.ShowShareMenu(vc,title: titlestr,content: contentstr,url:urlstr,urlimg:urlimg)
         })
 
         //--------------------------------------------------------------------
@@ -257,28 +259,40 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
     /**
     * 显示分享菜单示例
     */
-    func ShowShareMenu(vc:WebBaseViewController?,title:String?,content:String?,url:String?) {
-        
-        //1.创建分享参数
-        var shareParames = NSMutableDictionary()
-        shareParames.SSDKSetupShareParamsByText(content,
-            images : UIImage(named: "Default@2x.png"),
-            url : NSURL(string:url!),
-            title : title,
-            type : SSDKContentType.Auto)
-        //2.进行分享
-        ShareSDK.showShareActionSheet(vc?.view, items: nil, shareParams: shareParames) { (state : SSDKResponseState, platformType : SSDKPlatformType, userdata : [NSObject : AnyObject]!, contentEnity : SSDKContentEntity!, error : NSError!, Bool end) -> Void in
-            
-            switch state{
-                
-            case SSDKResponseState.Success: println("分享成功")
-            case SSDKResponseState.Fail:    println("分享失败,错误描述:\(error)")
-            case SSDKResponseState.Cancel:  println("分享取消")
-                
-            default:
-                break
+
+
+    func ShowShareMenu(vc:WebBaseViewController?,title:String?,content:String?,url:String?,urlimg:String?) {
+        func downloadok(image:UIImage?, err:NSError?)->(){
+            var img = UIImage(named: "Default@2x.png")
+            if !(err != nil) {
+                img = image!
             }
-        }
+            
+            //1.创建分享参数
+            var shareParames = NSMutableDictionary()
+            shareParames.SSDKSetupShareParamsByText(content,
+                images : img,
+                url : NSURL(string:url!),
+                title : title,
+                type : SSDKContentType.Auto)
+            //2.进行分享
+            ShareSDK.showShareActionSheet(vc?.view, items: nil, shareParams: shareParames) { (state : SSDKResponseState, platformType : SSDKPlatformType, userdata : [NSObject : AnyObject]!, contentEnity : SSDKContentEntity!, error : NSError!, Bool end) -> Void in
+                
+                switch state{
+                    
+                case SSDKResponseState.Success: println("分享成功")
+                case SSDKResponseState.Fail:    println("分享失败,错误描述:\(error)")
+                case SSDKResponseState.Cancel:  println("分享取消")
+                    
+                default:
+                    break
+                }
+            }
+            
+        };
+        var url:NSURL = NSURL(string:urlimg!)!
+        SimpleCache.sharedInstance.getImage(url,completion:downloadok);
+        
     }
 
     

@@ -37,6 +37,7 @@
 		164049461B46937B008EE664 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164049451B46937B008EE664 /* CoreTelephony.framework */; };
 		164049481B469385008EE664 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 164049471B469385008EE664 /* libstdc++.dylib */; };
 		1640494A1B469391008EE664 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 164049491B469391008EE664 /* libz.dylib */; };
+		164348861B86BC240014495D /* SimpleImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164348841B86BC240014495D /* SimpleImageCache.swift */; };
 		1648F7781B85AB890093F4A5 /* WebJsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1648F7771B85AB890093F4A5 /* WebJsHelper.swift */; };
 		167B7AC91B26F6DA00F56788 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167B7AC71B26F6DA00F56788 /* LaunchScreen.xib */; };
 		16AFB4401B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB4371B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift */; };
@@ -113,6 +114,7 @@
 		164049451B46937B008EE664 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		164049471B469385008EE664 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		164049491B469391008EE664 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		164348841B86BC240014495D /* SimpleImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleImageCache.swift; sourceTree = "<group>"; };
 		1648F7771B85AB890093F4A5 /* WebJsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebJsHelper.swift; sourceTree = "<group>"; };
 		16587DAC1B734E6C009ADC1A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		16587DAD1B734E6C009ADC1A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 		16AFB4361B4696E6009CB2BF /* thirdparty */ = {
 			isa = PBXGroup;
 			children = (
+				164348841B86BC240014495D /* SimpleImageCache.swift */,
 				16AFB4371B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift */,
 				16AFB4381B4696E6009CB2BF /* Alamofire.swift */,
 				16AFB4391B4696E6009CB2BF /* QRCodeReader */,
@@ -499,6 +502,7 @@
 				16AFB4431B4696E6009CB2BF /* QRCodeViewController.swift in Sources */,
 				16AFB4421B4696E6009CB2BF /* QRCodeReader.swift in Sources */,
 				16AFB4451B4696E6009CB2BF /* SwitchCameraButton.swift in Sources */,
+				164348861B86BC240014495D /* SimpleImageCache.swift in Sources */,
 				16AFB4411B4696E6009CB2BF /* Alamofire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
