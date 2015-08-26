@@ -58,6 +58,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate,WXApiDelegate {
     }
     func onResp(resp: BaseResp!) {
         println("onResp called")
+        if resp is SendAuthResp{
+            let result = resp as! SendAuthResp
+            var txtContent = ""
+            var txtResult = "failed"
+            if result.errCode == 0{
+                txtResult = "success"
+                txtContent =  "{\"state\":\"\(result.state)\",\"code\":\"\(result.code)\",\"lang\":\"\(result.lang)\",\"country\":\"\(result.country)\"}"
+            }
+            else{
+                txtContent =  "{\"errCode\":\"\(result.errCode)\",\"errStr\":\"\(result.errStr)\"}"
+            }
+            
+            let jsonRes = JSON(["type":"res","param1":txtResult,"param2":txtContent])
+            self.wxloginResult?(jsonRes)
+        }
     }
 
     func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool{
