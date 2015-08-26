@@ -181,7 +181,24 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
         
         
         })
-        
+        //--------------------------------------------------------------------
+        //qq是否安装
+        bridge?.registerHandler("isinstalled",handler: {
+            data, responseCallback in
+            let json = JSON(data)
+            let process = json["param1"].string
+            if process == "qq"{
+                var txt = "false"
+                if TencentOAuth.iphoneQQInstalled() == true{
+                    txt = "true"
+                }
+                let jsonRes = JSON(["type":"res","param1":"success","param2":txt])
+                responseCallback(jsonRes.object)
+            }
+            else if process == "wx"{
+            }
+        })
+            
         //--------------------------------------------------------------------
         //qq自动登录
         bridge?.registerHandler("qqautologin",handler: {
