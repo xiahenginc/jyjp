@@ -11,7 +11,7 @@ import UIKit
 class WebPageViewController: WebBaseViewController {
 
     override func viewDidLoad() {
-      //  url = "http://www.guorouwang.com/wap_ios2_wxlogin/"
+        url = "http://www.guorouwang.com/wap_ios3"
         myWebView = self.webView
         super.viewDidLoad()
     }
@@ -22,23 +22,23 @@ class WebPageViewController: WebBaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func loadurl(){
-        if let path = NSBundle.mainBundle().pathForResource("index", ofType: "html",inDirectory:"www") {
-            //            let baseURL = NSURL.fileURLWithPath(path.stringByDeletingLastPathComponent,isDirectory:true)
-            //            let requestURL = NSURL(string:path.lastPathComponent,relativeToURL:baseURL)
-            //            let request = NSURLRequest(URL: requestURL!)
-            //            webView.loadRequest(request)
-            
-            
-            if let htmlData = NSData(contentsOfFile: path){
-                var htmlString = NSString(data:htmlData,encoding:NSUTF8StringEncoding)!
-                let nshtmdata = htmlString.dataUsingEncoding(NSUTF8StringEncoding)
-                
-                let baseURL = NSURL.fileURLWithPath(path.stringByDeletingLastPathComponent,isDirectory:true)
-                webView.loadData(nshtmdata, MIMEType: "text/html", textEncodingName: "UTF-8", baseURL: baseURL)
-            }
-        }
-    }
+//    override func loadurl(){
+//        if let path = NSBundle.mainBundle().pathForResource("index", ofType: "html",inDirectory:"www") {
+//            //            let baseURL = NSURL.fileURLWithPath(path.stringByDeletingLastPathComponent,isDirectory:true)
+//            //            let requestURL = NSURL(string:path.lastPathComponent,relativeToURL:baseURL)
+//            //            let request = NSURLRequest(URL: requestURL!)
+//            //            webView.loadRequest(request)
+//            
+//            
+//            if let htmlData = NSData(contentsOfFile: path){
+//                var htmlString = NSString(data:htmlData,encoding:NSUTF8StringEncoding)!
+//                let nshtmdata = htmlString.dataUsingEncoding(NSUTF8StringEncoding)
+//                
+//                let baseURL = NSURL.fileURLWithPath(path.stringByDeletingLastPathComponent,isDirectory:true)
+//                webView.loadData(nshtmdata, MIMEType: "text/html", textEncodingName: "UTF-8", baseURL: baseURL)
+//            }
+//        }
+//    }
     
 
     /*
