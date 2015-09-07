@@ -1,0 +1,395 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK"><link rel="stylesheet" type="text/css" href="images/window.css" media="all">
+<script type="text/javascript" src="images/jquery-1.5.1.min.js"></script>
+
+</head><body class="hPC" style=""><div class="window" id="windowcenter" style="display:none">
+  <div id="title" class="wtitle">操作提示<span class="close" id="alertclose"></span></div>
+  <div class="content" style="text-align:center">
+    <div id="txt"></div>
+      <input id="mb_btn_ok" class="alert_class_tc" type="button" value="确定" style="display:none;width:60px; height:25px;">&nbsp;&nbsp;
+      <input id="mb_btn_no" class="alert_class_tc" type="button" value="取消" style="display:none;width:60px; height:25px;">
+  </div>
+</div>
+<script type="text/javascript"> 
+
+/*$("#windowclosebutton").click(function () { 
+$("#windowcenter").slideUp(500);
+}); */
+
+function bindCloseClick(func){
+	$("#alertclose").click(function () { 
+		$("#windowcenter").slideUp(500);
+		document.getElementById("mb_btn_ok").style.display="none";
+		document.getElementById("mb_btn_no").style.display="none";
+		func();
+	});
+}
+function unbindCloseClick(func){
+	$("#alertclose").unbind("click");
+}
+
+function alert(title){ 
+    bindCloseClick(function(){});
+	$("#windowcenter").stop(true,true).slideToggle("slow"); 
+	$("#txt").html(title);
+	setTimeout(function(){
+		$("#windowcenter").slideUp(500);
+		unbindCloseClick();
+	},3000);
+}
+
+function myalert(title,func){ 
+	 bindCloseClick(func);
+	$("#windowcenter").stop(true,true).slideToggle("slow"); 
+	$("#txt").html(title);
+	setTimeout(function(){
+		$("#windowcenter").slideUp(500);
+		func();
+		unbindCloseClick();
+	},3000);
+}
+
+
+function confirm(title,callback){ 
+document.getElementById("mb_btn_ok").style.display="";
+document.getElementById("mb_btn_no").style.display="";
+$("#windowcenter").stop(true,true).slideToggle("slow"); 
+$("#txt").html(title);
+btnOk(callback);
+btnNo();
+}
+
+//确定按钮事件
+var btnOk = function (callback) {
+	$("#mb_btn_ok").click(function () {		
+		$("#windowcenter").slideUp(500);//关闭弹框
+		//eval(callback);//执行  字符串  把字符串当作方法执行
+		callback();
+		document.getElementById("mb_btn_ok").style.display="none";
+		document.getElementById("mb_btn_no").style.display="none";
+	});
+}
+//取消按钮事件
+var btnNo = function () {
+	$("#mb_btn_no,#alertclose").click(function () {
+		$("#windowcenter").slideUp(500);//关闭弹框
+		document.getElementById("mb_btn_ok").style.display="none";
+		document.getElementById("mb_btn_no").style.display="none";
+	});
+}
+
+
+</script>
+<!--<input type="button" onclick="alert(1);">-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>果肉网--领先的生鲜电商服务平台</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link href="images/css.css" rel="stylesheet" type="text/css">
+<link href="images/banner.css" rel="stylesheet" type="text/css">
+<meta name="keywords" content="果肉网">
+<meta name="description" content="果肉网">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="layout" content="main">
+<script src="images/idangerous.js" type="text/javascript"></script>
+<script src="images/idangerous.js" type="text/javascript"></script>
+<script src="images/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="images/qc_loader.js" charset="utf-8"></script><script src="images/qc-1.0.1.js" type="text/javascript" charset="utf-8"></script> 
+
+
+
+<script type="text/javascript">
+function loginout(){
+	QC.Login.signOut();
+	location.href='logout.jsp';
+}
+</script>
+<script type="text/javascript">
+function qiandao(uid,jf1){
+	var uidd=uid;
+	if(uidd==""||uidd==null){
+		alert("请先登录！");
+		return false;
+	}
+	$.ajax({
+			  url: "jfsc_qiandao.jsp",
+			  type: "post",
+			  cache: true,
+			  async:false,
+			  data:{"uid":uidd},
+			  error: function (data){
+			  	alert("服务器正忙，请稍后重试！");
+			  },
+			  success: function(data){
+					if($.trim(data)=="ok"){
+						myalert("签到成功!果肉币+"+jf1,function(){
+							window.location.reload();
+							});
+					}else{
+						alert("您今天已经签到过了!");
+					}
+			 	}
+		 });
+
+}
+</script>
+
+
+
+
+
+<div class="sn-nav"> 
+  <!--<div class="sn-nav-back"><a href="javascript:history.back(-1);">返回</a></div>-->
+   <div class="sn-nav-title of">个人中心</div>
+  <div class="sn-nav-right">
+    <div class="quick-icon-area" id="quick" onClick="$(&#39;#sub-title&#39;).toggle();$(&#39;#screenIfmNav&#39;).toggle();"><a class="quick-icon" href="javascript:void(0);"></a></div>
+    
+
+
+
+
+
+
+
+
+
+<div class="sub-list hide" id="sub-title" style="display: none;"> 
+    <a href="#"><span class="quick-nav index-icon">首页</span></a> 
+    <a href="#"><span class="quick-nav search-icon">全部分类</span></a> 
+    <a href="#"><span class="quick-nav cart-icon">购物车</span></a> 
+    <a href="#"><span class="quick-nav yigou-icon">我的果肉</span></a> </div>
+    
+    <div id="screenIfmNav" class="screenIfm" onClick="$(&#39;#sub-title&#39;).toggle();$(this).hide();" style="opacity: 0; display: none;"></div>
+ 
+ 
+  </div>
+</div>
+<div style="height:55px"></div>
+<div class="info_mine pr">
+  <div class="mine_info">
+    <div class="img" style="background-image:url(images/bromember.jpg.pagespeed.ce.ZINjIpID-0.jpg)"></div>
+    <div class="user_info"> <span class="fontarial">亲爱的:</span>
+      <div class="pd_comment-score"> <span>头衔：</span> <span><img src="images/hy2.gif"></span> </div>
+      <span style="position:absolute; right:10px; margin-top:-10px; background-color:#fa388f; border-radius:5px; color:#fff; padding:2px 8px"><a href="javascript:;" style="color:#FFF" onClick="qiandao(3,10)">签到</a></span> </div>
+  </div>
+  <nav class="nav-state flex mg10"> <a href="#wdye.jsp"><em>我的余额</em><i>￥0</i></a> <a href="#wdjf.jsp"><em>我的果肉币</em><i>0</i></a> <a href="#wdyhq.jsp"><em>我的优惠券</em><i>0</i></a> <a href="#wddd.jsp"><em>我的订单</em><i>0</i></a><a href="#wddd_jf.jsp"><em>果肉币订单</em><i>0</i></a> </nav>
+</div>
+<section>
+  <ul class="list">
+    <li class="box">
+      <dl>
+        <a href="#" style="height:auto;">
+        <dd>
+          <div><img src="images/l1.png"></div>
+        </dd>
+        <dt>果肉币商城</dt>
+        </a>
+      </dl>
+      <dl>
+        <a href="#" style="height:auto;">
+        <dd>
+          <div><img src="images/l2.png"></div>
+        </dd>
+        <dt>果粉圈</dt>
+        </a>
+      </dl>
+    </li>
+    
+    
+    
+    <li class="box">
+      <dl>
+        <a href="#" style="height:auto;">
+        <dd>
+          <div><img src="images/l3.png"></div>
+        </dd>
+        <dt>摇优惠</dt>
+        </a>
+      </dl>
+      
+      <dl style="display:;">
+        <a href="#" style="height:auto;">
+        <dd>
+          <div><img src="images/l4.png"></div>
+        </dd>
+        <dt>大转盘抽奖</dt>
+        </a>
+      </dl>
+    </li>
+    <li class="box">
+      <dl>
+        <a href="#" style="height:auto;">
+        <dd>
+          <div><img src="images/l5.png"></div>
+        </dd>
+        <dt>我的收藏</dt>
+        </a>
+      </dl>
+      <dl>
+        <a href="#" style="height:auto;">
+        <dd>
+          <div><img src="images/l6.png"></div>
+        </dd>
+        <dt>自提点查询</dt>
+        </a>
+      </dl>
+    </li>
+    <li class="box">
+      <dl>
+        <a href="#" style="height:auto;">
+        <dd>
+          <div><img src="images/l7.png"></div>
+        </dd>
+        <dt>投诉建议</dt>
+        </a>
+      </dl>
+      <dl>
+        <a href="#" style="height:auto;">
+        <dd>
+          <div><img src="images/l8.png"></div>
+        </dd>
+        <dt>收货地址</dt>
+        </a>
+      </dl>
+    </li>
+  </ul>
+</section>
+ <div class="ft_top1" style="background-color:#eee; "> <span class="userNameSpan"> </span> <a href="javascript:loginout()">退出</a> </div>
+
+
+
+
+
+
+<footer class="width100 " style="margin-top:3px;">
+  <div class="plc_footer">
+    <div class="sec_phone" style="background-color:#fff;color:#333;"> <span>客服热线：</span> <a href="tel:400-875-1277"><i class="colorf60 fontarial f18">400-875-1277</i></a>&nbsp;&nbsp;<a href="tel:400-875-1377"><i class="colorf60 fontarial f18">400-875-1377</i></a></div>
+  </div>
+  <div class="mbft_bom " style="background-color:#fff;">
+    <p>&#169; 2015 果肉网</p>
+  </div>
+  <div style="height:60px; background-color:#fff"></div>
+</footer>
+
+
+
+<aside class="phoneBox">
+  <div class="top_bar">
+    <nav>
+      <ul id="top_menu" class="top_menu">
+        <li><a href="staticindex.html"><img src="images/menu1.png">
+          <label style="color:#43acfd">首页</label>
+          </a></li>
+        <li><a href="fl.html"><img src="images/menu2.png">
+          <label>分类</label>
+          </a></li>
+        <li><a href="car.html"><!--<i class="number"></i>--><img src="images/menu3.png">
+          <label>购物车</label>
+          </a></li>
+        <li><a href="login.html"><img src="images/menu4.png">
+          <label>我的</label>
+          </a></li>
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+
+
+<link rel="stylesheet" type="text/css" href="images/window.css" media="all">
+<!--邮箱后缀自动出来-->
+<script type="text/javascript" src="images/jquery-1.5.1.min.js"></script>
+
+<div class="window" id="windowcenter" style="display:none">
+  <div id="title" class="wtitle">操作提示<span class="close" id="alertclose"></span></div>
+  <div class="content" style="text-align:center">
+    <div id="txt"></div>
+      <input id="mb_btn_ok" class="alert_class_tc" type="button" value="确定" style="display:none;width:60px; height:25px;">&nbsp;&nbsp;
+      <input id="mb_btn_no" class="alert_class_tc" type="button" value="取消" style="display:none;width:60px; height:25px;">
+  </div>
+</div>
+<script type="text/javascript"> 
+
+/*$("#windowclosebutton").click(function () { 
+$("#windowcenter").slideUp(500);
+}); */
+
+function bindCloseClick(func){
+	$("#alertclose").click(function () { 
+		$("#windowcenter").slideUp(500);
+		document.getElementById("mb_btn_ok").style.display="none";
+		document.getElementById("mb_btn_no").style.display="none";
+		func();
+	});
+}
+function unbindCloseClick(func){
+	$("#alertclose").unbind("click");
+}
+
+function alert(title){ 
+    bindCloseClick(function(){});
+	$("#windowcenter").stop(true,true).slideToggle("slow"); 
+	$("#txt").html(title);
+	setTimeout(function(){
+		$("#windowcenter").slideUp(500);
+		unbindCloseClick();
+	},3000);
+}
+
+function myalert(title,func){ 
+	 bindCloseClick(func);
+	$("#windowcenter").stop(true,true).slideToggle("slow"); 
+	$("#txt").html(title);
+	setTimeout(function(){
+		$("#windowcenter").slideUp(500);
+		func();
+		unbindCloseClick();
+	},3000);
+}
+
+
+function confirm(title,callback){ 
+document.getElementById("mb_btn_ok").style.display="";
+document.getElementById("mb_btn_no").style.display="";
+$("#windowcenter").stop(true,true).slideToggle("slow"); 
+$("#txt").html(title);
+btnOk(callback);
+btnNo();
+}
+
+//确定按钮事件
+var btnOk = function (callback) {
+	$("#mb_btn_ok").click(function () {		
+		$("#windowcenter").slideUp(500);//关闭弹框
+		//eval(callback);//执行  字符串  把字符串当作方法执行
+		callback();
+		document.getElementById("mb_btn_ok").style.display="none";
+		document.getElementById("mb_btn_no").style.display="none";
+	});
+}
+//取消按钮事件
+var btnNo = function () {
+	$("#mb_btn_no,#alertclose").click(function () {
+		$("#windowcenter").slideUp(500);//关闭弹框
+		document.getElementById("mb_btn_ok").style.display="none";
+		document.getElementById("mb_btn_no").style.display="none";
+	});
+}
+
+
+</script>
+<!--<input type="button" onclick="alert(1);">-->
+</body></html>

@@ -51,7 +51,7 @@
 		16AFB44B1B469718009CB2BF /* QRCodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB4491B469718009CB2BF /* QRCodeHelper.swift */; };
 		16AFB44D1B469733009CB2BF /* Locationmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB44C1B469733009CB2BF /* Locationmanager.swift */; };
 		16AFB44F1B469772009CB2BF /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB44E1B469772009CB2BF /* WebPageViewController.swift */; };
-		16DF2EAA1B942C700020AE1D /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 16DF2EA91B942C700020AE1D /* splash.png */; };
+		16EFCFDC1B9D1E97008451D4 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EFCFDB1B9D1E97008451D4 /* splash.png */; };
 		5FAEB2D81B215B0200A9046A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEB2D71B215B0200A9046A /* AppDelegate.swift */; };
 		5FAEB2DD1B215B0200A9046A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEB2DB1B215B0200A9046A /* Main.storyboard */; };
 		5FAEB2DF1B215B0200A9046A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEB2DE1B215B0200A9046A /* Images.xcassets */; };
@@ -132,7 +132,7 @@
 		16AFB4491B469718009CB2BF /* QRCodeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeHelper.swift; sourceTree = "<group>"; };
 		16AFB44C1B469733009CB2BF /* Locationmanager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locationmanager.swift; sourceTree = "<group>"; };
 		16AFB44E1B469772009CB2BF /* WebPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
-		16DF2EA91B942C700020AE1D /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = ../../../../../splash.png; sourceTree = "<group>"; };
+		16EFCFDB1B9D1E97008451D4 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		5FAEB2D21B215B0200A9046A /* jyjp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jyjp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FAEB2D61B215B0200A9046A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FAEB2D71B215B0200A9046A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -341,7 +341,7 @@
 		5FAEB2D41B215B0200A9046A /* jyjp */ = {
 			isa = PBXGroup;
 			children = (
-				16DF2EA91B942C700020AE1D /* splash.png */,
+				16EFCFDB1B9D1E97008451D4 /* splash.png */,
 				5FE5C16D1B218AC6003F5E03 /* Default-568h@2x.png */,
 				5FE5C16E1B218AC6003F5E03 /* Default@2x.png */,
 				1640492D1B4691AC008EE664 /* WebViewJavascriptBridge */,
@@ -462,7 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FAEB2F91B215D2300A9046A /* www in Resources */,
-				16DF2EAA1B942C700020AE1D /* splash.png in Resources */,
+				16EFCFDC1B9D1E97008451D4 /* splash.png in Resources */,
 				5FE5C16F1B218AC6003F5E03 /* Default-568h@2x.png in Resources */,
 				163512C31B85AFCC00AE3027 /* AlipaySDK.bundle in Resources */,
 				5FE5C1701B218AC6003F5E03 /* Default@2x.png in Resources */,
@@ -656,7 +656,7 @@
 				);
 				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6caebb5d-5a77-431c-97e9-eeee59db5d74";
+				PROVISIONING_PROFILE = "28bacab7-f0e6-451a-8182-3f86c2629fab";
 				SWIFT_OBJC_BRIDGING_HEADER = "jyjp/jyjp-Bridging-Header.h";
 			};
 			name = Debug;
@@ -685,7 +685,7 @@
 				);
 				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6caebb5d-5a77-431c-97e9-eeee59db5d74";
+				PROVISIONING_PROFILE = "28bacab7-f0e6-451a-8182-3f86c2629fab";
 				SWIFT_OBJC_BRIDGING_HEADER = "jyjp/jyjp-Bridging-Header.h";
 			};
 			name = Release;
