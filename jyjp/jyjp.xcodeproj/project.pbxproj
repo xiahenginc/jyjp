@@ -656,7 +656,7 @@
 				);
 				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "28bacab7-f0e6-451a-8182-3f86c2629fab";
+				PROVISIONING_PROFILE = "873832ac-bf1d-465c-b75e-51f3fbf8cbe7";
 				SWIFT_OBJC_BRIDGING_HEADER = "jyjp/jyjp-Bridging-Header.h";
 			};
 			name = Debug;
@@ -685,7 +685,7 @@
 				);
 				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "28bacab7-f0e6-451a-8182-3f86c2629fab";
+				PROVISIONING_PROFILE = "873832ac-bf1d-465c-b75e-51f3fbf8cbe7";
 				SWIFT_OBJC_BRIDGING_HEADER = "jyjp/jyjp-Bridging-Header.h";
 			};
 			name = Release;
