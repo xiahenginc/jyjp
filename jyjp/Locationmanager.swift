@@ -46,7 +46,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate
     
     func startMonitoringSignificantLocationChanges(listener: LocationUpdate)
     {
-        println("startMonitoringSignificantLocationChanges")
+        print("startMonitoringSignificantLocationChanges")
         self.manager?.startMonitoringSignificantLocationChanges()
         self.manager?.startUpdatingLocation()
         self.listener = listener
@@ -54,7 +54,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate
     
     func stopMonitoringSignificantLocationChanges()
     {
-        println("stopMonitoringSignificantLocationChanges")
+        print("stopMonitoringSignificantLocationChanges")
       //  self.manager?.stopUpdatingLocation()
         self.manager?.stopMonitoringSignificantLocationChanges()
         self.listener = nil
@@ -63,16 +63,16 @@ class LocationManager: NSObject, CLLocationManagerDelegate
     
     //MARK: - CLLocationManagerDelegate
     
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!)
-    {
-        self.manager?.stopUpdatingLocation()
-        if let l = listener {
-            let location: CLLocation? = locations.last as? CLLocation
-            if (location == nil) {
-                l(issuccess: false,location: nil)
-                return
-            }
-            l(issuccess: true,location: location!)
-        }
-    }
+//    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!)
+//    {
+//        self.manager?.stopUpdatingLocation()
+//        if let l = listener {
+//            let location: CLLocation? = locations.last as? CLLocation
+//            if (location == nil) {
+//                l(issuccess: false,location: nil)
+//                return
+//            }
+//            l(issuccess: true,location: location!)
+//        }
+//    }
 }

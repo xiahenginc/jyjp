@@ -44,7 +44,7 @@ class WebBaseViewController: UIViewController,UIWebViewDelegate {
 
     // 开始加载的时候执行该方法
     func webViewDidStartLoad(webView: UIWebView){
-        println("webViewDidStartLoad");
+        print("webViewDidStartLoad");
 //        var widthimg = 140;
 //        self.img1 = UIImageView(frame: CGRect(x: 0, y: 0, width: widthimg, height: widthimg))
 //       // self.img1 = UIImageView()
@@ -82,13 +82,13 @@ class WebBaseViewController: UIViewController,UIWebViewDelegate {
     
     // 加载完成的时候执行该方法
     func webViewDidFinishLoad(webView: UIWebView){
-        println("webViewDidFinishLoad")
+        print("webViewDidFinishLoad")
      //   self.dismissPreloader();
     }
        
     func refreshPage(){
        // loadurl()
-        println("refresh page:\(self.myWebView?.request!.URL!.absoluteString)")
+        print("refresh page:\(self.myWebView?.request!.URL!.absoluteString)")
         myWebView?.reload()
     }
     

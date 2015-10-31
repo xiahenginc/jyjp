@@ -16,7 +16,7 @@ class SimpleCache: NSObject, NSURLSessionTaskDelegate {
     override init() {
         super.init()
         
-        var config = NSURLSessionConfiguration.defaultSessionConfiguration()
+        let config = NSURLSessionConfiguration.defaultSessionConfiguration()
         config.requestCachePolicy = NSURLRequestCachePolicy.ReturnCacheDataElseLoad
         config.URLCache = URLCache
         
@@ -26,7 +26,7 @@ class SimpleCache: NSObject, NSURLSessionTaskDelegate {
     func getImageFromCache(url:NSURL, completion:(UIImage?, NSError?)->()) {
         let urlRequest = NSURLRequest(URL: url, cachePolicy: NSURLRequestCachePolicy.ReturnCacheDataElseLoad, timeoutInterval: 30.0)
         if let response = URLCache.cachedResponseForRequest(urlRequest) {
-            var image = UIImage(data: response.data)
+            let image = UIImage(data: response.data)
             dispatch_async(dispatch_get_main_queue()) { () -> Void in
                 completion(image, nil)
                 return
@@ -62,9 +62,9 @@ class SimpleCache: NSObject, NSURLSessionTaskDelegate {
                                     completionHandler(nil, NSError(domain: NSURLErrorDomain, code: httpResponse.statusCode, userInfo: nil))
                                 } else {
                                     //									println(" >>>>>>>>> LENGTHS: \(response.expectedContentLength) - got: \(data.length)")
-                                    strongSelf.URLCache.storeCachedResponse(NSCachedURLResponse(response:response, data:data, userInfo:nil, storagePolicy:NSURLCacheStoragePolicy.Allowed), forRequest: urlRequest)
+                                    strongSelf.URLCache.storeCachedResponse(NSCachedURLResponse(response:response!, data:data!, userInfo:nil, storagePolicy:NSURLCacheStoragePolicy.Allowed), forRequest: urlRequest)
                                     
-                                    var image = UIImage(data: data)
+                                    var image = UIImage(data: data!)
                                     dispatch_async(dispatch_get_main_queue()) { 
                                         completionHandler(image, nil)
                                         return

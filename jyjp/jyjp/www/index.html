@@ -1,44 +1,194 @@
-﻿<!DOCTYPE html>
-
+<!DOCTYPE html>
 <html>
-    <head>      
-       
-        <meta http-equiv="content-type" content="text/html; charset=utf-8">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-       
-        <title>果肉网</title>
-    </head>
-    <body>
-        <img src="img/loading1.gif" width="100%" height="100%" />
-            <!--<h1>请检查您的网络设置</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">刷新页面</p>
-                 <input type="button" value="刷新页面"  class="event received" onclick="localtion.href='index.html';">
-            </div>-->
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+  <meta name="msapplication-tap-highlight" content="no">
 
-<script type="text/javascript" src="js/index.js"></script>
-        
-<script src="http://www.guorouwang.com/js/jquery-1.4.2.min.js"></script>
-<script>
-var i=0;
-setTimeout("location.href='staticindex.html'",10000); // 10秒后跳转网络错误页面
-setInterval("i=i+1",1000);
-if(typeof(window.jQuery) == "undefined"){
-	
-}else{
-	if(i>=3){
-		location.href='http://www.guorouwang.com/wap_ios3/';
-	}else{
-		var time=3-i;
-		setTimeout("location.href='http://www.guorouwang.com/wap_ios3/'",time*1000);
-	}
-}
+  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="/merged-stylesheets.css?0003210c54a081943dbafca927d130ca2e81b41c">
 
-</script>
+  <script type="text/javascript">
+    __meteor_runtime_config__ = JSON.parse(decodeURIComponent("%7B%22meteorRelease%22%3A%22METEOR%401.2.0.2%22%2C%22ROOT_URL%22%3A%22http%3A%2F%2Fsongqi.bncgears.com%2F%22%2C%22ROOT_URL_PATH_PREFIX%22%3A%22%22%2C%22DDP_DEFAULT_CONNECTION_URL%22%3A%22http%3A%2F%2Fsongqi.bncgears.com%22%2C%22autoupdateVersionCordova%22%3A%22221258fa1d6dab7616bd77177fe329f3ddcb1753%22%2C%22appId%22%3A%2212oudnziv6g301d4kjcx%22%7D"));
 
-    </body>
-    
+    if (/Android/i.test(navigator.userAgent)) {
+      // When Android app is emulated, it cannot connect to localhost,
+      // instead it should connect to 10.0.2.2
+      // (unless we're using an http proxy; then it works!)
+      if (!__meteor_runtime_config__.httpProxyPort) {
+        __meteor_runtime_config__.ROOT_URL = (__meteor_runtime_config__.ROOT_URL || '').replace(/localhost/i, '10.0.2.2');
+        __meteor_runtime_config__.DDP_DEFAULT_CONNECTION_URL = (__meteor_runtime_config__.DDP_DEFAULT_CONNECTION_URL || '').replace(/localhost/i, '10.0.2.2');
+      }
+    }
+  </script>
+
+  <script type="text/javascript" src="/cordova.js"></script>
+  <script type="text/javascript" src="/packages/underscore.js?46eaedbdeb6e71c82af1b16f51c7da4127d6f285"></script>
+  <script type="text/javascript" src="/packages/meteor.js?9418708e9519b747d9d631d85ea85b90c0b5c70c"></script>
+  <script type="text/javascript" src="/packages/tracker.js?7776276660c988c38fed448d8262b925dffb5bc3"></script>
+  <script type="text/javascript" src="/packages/deps.js?a0f1fc18309813a3aac8954f76d0c73e4c5d46f4"></script>
+  <script type="text/javascript" src="/packages/jquery.js?1015953f785c9b76503e2ecb391507dce965f357"></script>
+  <script type="text/javascript" src="/packages/base64.js?6b407c3b106cfc043cc07a07a111a2443d789bd4"></script>
+  <script type="text/javascript" src="/packages/ejson.js?5e95dd4b5971d96cb2d3287c54b14d9002f83ab7"></script>
+  <script type="text/javascript" src="/packages/check.js?cfa4250d2aae369fa666098adc27266de8e26aea"></script>
+  <script type="text/javascript" src="/packages/htmljs.js?fd1566f5a5a4b277eb93f0a636a84a07ab9a83db"></script>
+  <script type="text/javascript" src="/packages/id-map.js?c9a0833f370b91bbc3fd76d54f21d6ce1850af49"></script>
+  <script type="text/javascript" src="/packages/random.js?f390084b611992ee4c5bd9d83b86877f3797289c"></script>
+  <script type="text/javascript" src="/packages/mongo-id.js?3c6c0f6ceace5f42b7dfee0fcafe19ae1b711909"></script>
+  <script type="text/javascript" src="/packages/diff-sequence.js?f4337773c8aaf9bcaa5f5f22865660cbdd471eaa"></script>
+  <script type="text/javascript" src="/packages/observe-sequence.js?cd318009bd759e1458173f84a537c5dd315b4f86"></script>
+  <script type="text/javascript" src="/packages/reactive-var.js?975c4d5513ecf8c3a212b5aa160a9ea4447f3079"></script>
+  <script type="text/javascript" src="/packages/blaze.js?9391df93ba5076c2cfc61ee68724eb79b65f00d9"></script>
+  <script type="text/javascript" src="/packages/ui.js?6aa94fb4743be2472f799f928674607edae2afdf"></script>
+  <script type="text/javascript" src="/packages/spacebars.js?1aedcc2aa3ae9ff5d860d73516110cedd77c033e"></script>
+  <script type="text/javascript" src="/packages/templating.js?142b64439619ddabba8ad16a798ed8349de73bae"></script>
+  <script type="text/javascript" src="/packages/iron_core.js?d1736948a39307f6fd63ab4df0181565b9d3f20f"></script>
+  <script type="text/javascript" src="/packages/iron_dynamic-template.js?ee3a82d9513d6672d735cd269e5a228a8adb9247"></script>
+  <script type="text/javascript" src="/packages/iron_layout.js?e780915e25c3eabb4e4cf232e4a5135d85f05020"></script>
+  <script type="text/javascript" src="/packages/iron_url.js?4bbef75bdd38d525f6031349de59822334832195"></script>
+  <script type="text/javascript" src="/packages/iron_middleware-stack.js?ff70621b6c5f6a406edc60600c4b76126dae21d6"></script>
+  <script type="text/javascript" src="/packages/iron_location.js?1652e97dc5ef338803fa388aef199fecd9426694"></script>
+  <script type="text/javascript" src="/packages/ordered-dict.js?18a4254f3dd5f8c97946dadb60e33c91efab39c1"></script>
+  <script type="text/javascript" src="/packages/geojson-utils.js?bfbab9d995bbbb19fa1b11a3cfdb9da5f5f328ba"></script>
+  <script type="text/javascript" src="/packages/minimongo.js?cdf1a26cf7719fa9471a8017c3defd5aea812727"></script>
+  <script type="text/javascript" src="/packages/retry.js?acb5f93adc31a57311c18af4ce21068297f00f37"></script>
+  <script type="text/javascript" src="/packages/ddp-common.js?407f25963eff34d975e0ca121f51d819c7c8d364"></script>
+  <script type="text/javascript" src="/packages/reload.js?234f78ebae6ce49cbb0da4705afaec398706283b"></script>
+  <script type="text/javascript" src="/packages/ddp-client.js?250b63e6c919c5383a0511ee4efbf42bb70a650f"></script>
+  <script type="text/javascript" src="/packages/ddp.js?1c935134013739ed5ece46880dea800b6319bd67"></script>
+  <script type="text/javascript" src="/packages/ddp-server.js?1057b33d71942bc01fd0167e2b2a5f49f5545d11"></script>
+  <script type="text/javascript" src="/packages/mongo.js?5dcfbae63393ea63b330ea0c46d7b41eb1b4c3ae"></script>
+  <script type="text/javascript" src="/packages/reactive-dict.js?e43655c138a9184c40228ef4dd2da3f65f1bd8bb"></script>
+  <script type="text/javascript" src="/packages/iron_controller.js?9d2e717544918c706f196546cf95012eaae0fb76"></script>
+  <script type="text/javascript" src="/packages/iron_router.js?dd5fa02859b6335661b94134bd9903be8eecf44d"></script>
+  <script type="text/javascript" src="/packages/npm-bcrypt.js?339fbff12a6703226e44b2e1f9d42612d7f2d1e1"></script>
+  <script type="text/javascript" src="/packages/babel-compiler.js?b72b25550ee1619b0eaddf5e0c1541e8c264ccf0"></script>
+  <script type="text/javascript" src="/packages/ecmascript.js?9c79b20dd3f3a6da85828defdd8585b8436af75d"></script>
+  <script type="text/javascript" src="/packages/rate-limit.js?1cbc4d8a96b20fbcf6376e96a09189bffb571050"></script>
+  <script type="text/javascript" src="/packages/ddp-rate-limiter.js?57ec3ab3391710187844397b2105593ab2ad8e01"></script>
+  <script type="text/javascript" src="/packages/localstorage.js?c9dab65641bca0463e02de20ea9d56feacf13aba"></script>
+  <script type="text/javascript" src="/packages/callback-hook.js?f5eea425e2802257907f21606b9e996a7087dab7"></script>
+  <script type="text/javascript" src="/packages/babel-runtime.js?b0359ff15b87202234ffb6a78f85b70175b412af"></script>
+  <script type="text/javascript" src="/packages/promise.js?c18eac25a2117745aa5b372e139bae2fce4a84fe"></script>
+  <script type="text/javascript" src="/packages/ecmascript-collections.js?f40db97e12a9f8e6be41cace4209f022d24ec40e"></script>
+  <script type="text/javascript" src="/packages/accounts-base.js?37ee275552e2b0b0f518492f393eb55f395001ce"></script>
+  <script type="text/javascript" src="/packages/sha.js?8d3df110f526e457248524a1acbdb13b6e05179c"></script>
+  <script type="text/javascript" src="/packages/srp.js?efa91019a74800ae4a7521f5dca598e4b872bc0b"></script>
+  <script type="text/javascript" src="/packages/accounts-password.js?6b77823b5615d402d0dd2cabb57afa1df3468e2f"></script>
+  <script type="text/javascript" src="/packages/aldeed_simple-schema.js?dcebad0eb20d4ebd7e2746884dc69b55646c1af3"></script>
+  <script type="text/javascript" src="/packages/livedata.js?93f27626c1702ea8af804d6170ffbf8968626718"></script>
+  <script type="text/javascript" src="/packages/momentjs_moment.js?4e38cbc4dc376eb002e586682f309a2b2d58561c"></script>
+  <script type="text/javascript" src="/packages/aldeed_autoform.js?8d8955f3aabfe2ab46c89e06e9d94100df40ae6d"></script>
+  <script type="text/javascript" src="/packages/mrt_moment.js?bd533e1437e8b8f8231ae261fec4122c8fa8960b"></script>
+  <script type="text/javascript" src="/packages/fortawesome_fontawesome.js?da998d085c64c2fcae7c78f19c74e56c2f7b0fd4"></script>
+  <script type="text/javascript" src="/packages/alanning_roles.js?0f20b892d4a0a11a6ea8431da3d0a0953ba951a9"></script>
+  <script type="text/javascript" src="/packages/twbs_bootstrap.js?845314ae48b689f1ceb1990a5a4c96a4a0015d39"></script>
+  <script type="text/javascript" src="/packages/lai_collection-extensions.js?f8478d22d6e7340a407e011db0e82655b2e122c9"></script>
+  <script type="text/javascript" src="/packages/dburles_mongo-collection-instances.js?43b0aa5cff685c0391191467888afdc677a2183e"></script>
+  <script type="text/javascript" src="/packages/gwendall_session-json.js?dca3edae377a16fe1b79ab7b8c154f83692b2db4"></script>
+  <script type="text/javascript" src="/packages/aldeed_template-extension.js?198fda9390ae7785a7535751677cd8247508c9eb"></script>
+  <script type="text/javascript" src="/packages/babrahams_editable-json.js?ef57ff2d427c95ecda3cd25f0b4d2d6366232e3c"></script>
+  <script type="text/javascript" src="/packages/session.js?9a40cf46e8dc125a3486dc33b2a965c1e9f8ff2b"></script>
+  <script type="text/javascript" src="/packages/meteortoys_toykit.js?770ba1f0018e3f020de79770010cb1d01edb0d4b"></script>
+  <script type="text/javascript" src="/packages/msavin_mongol.js?48c57a1a3be2646533a55320bd904b9052606118"></script>
+  <script type="text/javascript" src="/packages/cwohlman_pickadate.js?f58765dc08eaffedeed264a11a13b94990f4be91"></script>
+  <script type="text/javascript" src="/packages/standard-minifiers.js?b02a7937678c6058031ee7b2f45b5a617518335d"></script>
+  <script type="text/javascript" src="/packages/meteor-base.js?f0836ed3757e6217fff6e2710a1293407a6d9b09"></script>
+  <script type="text/javascript" src="/packages/mobile-experience.js?674f55574f9947b91bb5f92f9ea9be098479b649"></script>
+  <script type="text/javascript" src="/packages/blaze-html-templates.js?31453f3129c01ec6fabaa5b791f6572e8c4464a2"></script>
+  <script type="text/javascript" src="/packages/logging.js?43678cf365e00025aac2fb1f4b9e65a193c27fc4"></script>
+  <script type="text/javascript" src="/packages/cfs_standard-packages.js?6b4c841e93153890376ded71a6dfb9eb77fb79ae"></script>
+  <script type="text/javascript" src="/packages/cfs_base-package.js?734ffa709eb4d3d0f25c681f57090c49461c4a1a"></script>
+  <script type="text/javascript" src="/packages/mongo-livedata.js?4ca4e1ff839e70bde61f820c1b823470b978e9f5"></script>
+  <script type="text/javascript" src="/packages/raix_eventemitter.js?9dbc8f21550d5b0e800bfa809850f28136f1deb6"></script>
+  <script type="text/javascript" src="/packages/cfs_storage-adapter.js?02c427ad446ea6977bff3062116b647aa84390e7"></script>
+  <script type="text/javascript" src="/packages/cfs_gridfs.js?8fb04a3a351e62568e937b7c5de88af3f81cca68"></script>
+  <script type="text/javascript" src="/packages/webapp.js?1b9f36d855fc5c8399abf2579ac1e1512060cc95"></script>
+  <script type="text/javascript" src="/packages/hot-code-push.js?3916ae26c3ca4928e61dc2da7e7b3f93e4164c0c"></script>
+  <script type="text/javascript" src="/packages/fastclick.js?3226c1cc5431061e8dd6a68a8bdeee10e867eb2b"></script>
+  <script type="text/javascript" src="/packages/mobile-status-bar.js?93ea41a7f26014b58108322969c0d57188fb9418"></script>
+  <script type="text/javascript" src="/packages/launch-screen.js?b50bb1bd905d2cc3d6182ee28c096df0cc24a725"></script>
+  <script type="text/javascript" src="/packages/url.js?8c4d6df291ec5bafdb89c7be74de61e08741b10f"></script>
+  <script type="text/javascript" src="/packages/http.js?40d307fefc00445c189ac03f4ba12bc9ccf50635"></script>
+  <script type="text/javascript" src="/packages/cfs_data-man.js?b58db98eba98a6081763f645505dc664ad5b359c"></script>
+  <script type="text/javascript" src="/packages/cfs_file.js?246cf3116c9b9839564e22bd58f735e95bcbcb59"></script>
+  <script type="text/javascript" src="/packages/cfs_tempstore.js?3a96ab9ffebfea2246ef069c15e2705971e58db0"></script>
+  <script type="text/javascript" src="/packages/cfs_http-methods.js?c6de42314b311cbe9a1a14413ab68387ec1b786b"></script>
+  <script type="text/javascript" src="/packages/cfs_http-publish.js?846d7a8ca6bf439df3f9ec850171024964b0cdee"></script>
+  <script type="text/javascript" src="/packages/cfs_access-point.js?73de3e52d10ddfa1867a9406ca16164644c00176"></script>
+  <script type="text/javascript" src="/packages/cfs_reactive-property.js?8cbc8f24ffc00e82389ad4c0b7c37f3d22e547bf"></script>
+  <script type="text/javascript" src="/packages/cfs_reactive-list.js?b1ebb7d4cbb92393a4e13c5442291b36bd0ebe6c"></script>
+  <script type="text/javascript" src="/packages/cfs_power-queue.js?c62bc29a130805fdc29f80982e4cb5ebc5467dea"></script>
+  <script type="text/javascript" src="/packages/cfs_upload-http.js?40a85d8630caaae705a0a84cc6989fc98fda8487"></script>
+  <script type="text/javascript" src="/packages/cfs_collection.js?60aba0a5a61bd74237ef18bbd254c4c42a4b3cbb"></script>
+  <script type="text/javascript" src="/packages/cfs_collection-filters.js?d566d0ba3fffd0dd05f318f1f9bb7c86174915a4"></script>
+  <script type="text/javascript" src="/packages/cfs_worker.js?2f893cd638bf7d36df99645706588a0af07c3791"></script>
+  <script type="text/javascript" src="/packages/autoupdate.js?7ba7397dfae956e59d6c5e331bd706f8701b196b"></script>
+  <script type="text/javascript" src="/packages/global-imports.js?02c72b8d01e3594a241fe8feb03497f59172661a"></script>
+  <script type="text/javascript" src="/app/client/app/login/more/template.bz.js?28520a9ac963b1c019e9d452b55bf56984b919fe"></script>
+  <script type="text/javascript" src="/app/client/app/login/more/template.more.js?08c817aad4948035602c330f88f738ab9ef6958f"></script>
+  <script type="text/javascript" src="/app/client/app/coupons/template.mycoupons.js?57c68d0bc8079619bfd5e7ebe1a75347ce3ff8dd"></script>
+  <script type="text/javascript" src="/app/client/app/home/template.home.js?d486a511d10073e12dcbd97e0da760944e9c11db"></script>
+  <script type="text/javascript" src="/app/client/app/home/template.index.js?29748d9c6019898d1e3ef53e479e38ce365376fb"></script>
+  <script type="text/javascript" src="/app/client/app/home/template.profile.js?a95224b22a1875252100e35d26a0d86d3ede10bc"></script>
+  <script type="text/javascript" src="/app/client/app/layout/template.indexdetailpagelayout.js?1f8cba9423d2b88ae99cf3d0475199c3e83ecdd7"></script>
+  <script type="text/javascript" src="/app/client/app/layout/template.mainlayout.js?f231545e6433bc9e47e186fb5707df9c2381bbe9"></script>
+  <script type="text/javascript" src="/app/client/app/layout/template.nav.js?4379c81cc7a3c5471f1ba56fb662d804d444cdc8"></script>
+  <script type="text/javascript" src="/app/client/app/login/template.forgetpassword.js?43194b843ffb67b5ca38a7121ff59da22b650149"></script>
+  <script type="text/javascript" src="/app/client/app/login/template.register.js?b45192245d1d325242a1d7d627091d1573be4c01"></script>
+  <script type="text/javascript" src="/app/client/app/login/template.sign.js?c4069bc034ec448653c2e555aea6e6730a4439d4"></script>
+  <script type="text/javascript" src="/app/client/app/order/template.myorders.js?30aebc1ccb3a6aa3f9b713c5d935fce3a57e1539"></script>
+  <script type="text/javascript" src="/app/client/app/order/template.newmyorder.js?984ee224e7fcf3d9714fb85499d77131abcbf013"></script>
+  <script type="text/javascript" src="/app/client/app/order/template.neworder.js?162ea706b00c97183c5495707064294e649dbfec"></script>
+  <script type="text/javascript" src="/app/client/app/order/template.orderinfo.js?81743bb0c661c42572e77dea63c030807964133a"></script>
+  <script type="text/javascript" src="/app/client/app/order/template.orderquery.js?04fbedc17af3a60409d487435b083926f1e9df54"></script>
+  <script type="text/javascript" src="/app/client/app/order/template.orderselectaddress.js?e95d5f0e4c59eeea9d65ab4e16d1836fe1df2061"></script>
+  <script type="text/javascript" src="/app/client/app/order/template.orderselectcoupon.js?28d5471f893b7270d65def7043c42242aa737768"></script>
+  <script type="text/javascript" src="/app/client/app/order/template.orderselectredpackage.js?c86660cd8ea6ce8ebcb11e7dd089e0e271884aa1"></script>
+  <script type="text/javascript" src="/app/client/app/product/template.selectproduct.js?0d72b525bd6178024b8885440e28c76cc61e77a7"></script>
+  <script type="text/javascript" src="/app/client/app/redpackage/template.getredpackage.js?15d195474165b320eaba18fb6c390c92f2260aa4"></script>
+  <script type="text/javascript" src="/app/client/app/redpackage/template.myredpackage.js?d73aa2174fc59cb29f46adbf5cdb8d96f8da4da6"></script>
+  <script type="text/javascript" src="/app/client/app/salespromotions/template.salespromotions.js?848d1882279c076cfe01e7f5bfdd55de824d284b"></script>
+  <script type="text/javascript" src="/app/client/app/test/template.test.js?8bd8a07a610650850069f4c64a43cb1c28c63d63"></script>
+  <script type="text/javascript" src="/app/client/app/users/template.addaddress.js?19b74dc815c925b6e7f4909f82da8502016655ba"></script>
+  <script type="text/javascript" src="/app/client/app/users/template.updateuseraddress.js?fc262f03789ccf428da50ee3a218b4e623a751a6"></script>
+  <script type="text/javascript" src="/app/client/app/users/template.useraddress.js?ad295df293fb96c5539a91f9cdaa619a38644748"></script>
+  <script type="text/javascript" src="/app/lib/app/helpers.js?da427060ccb00d898f42d9f2c51e64ab04d699fd"></script>
+  <script type="text/javascript" src="/app/lib/app/route.js?c18464e9ab9e390ef3cb7d0c8ca168ac6614bad1"></script>
+  <script type="text/javascript" src="/app/lib/collections.js?f075ef3c8e415f16f00f544fcdd3f69871f09ecc"></script>
+  <script type="text/javascript" src="/app/lib/image.js?0f8c4ee76e918108bc34d769ae0a3d69d4c9e668"></script>
+  <script type="text/javascript" src="/app/client/app/login/more/more.js?b8cf13cad68637d45f111419567827a7da858c7d"></script>
+  <script type="text/javascript" src="/app/client/app/coupons/mycoupons.js?b987591202a085333dff9ef061227d4afb946693"></script>
+  <script type="text/javascript" src="/app/client/app/home/profile.js?f9d399b5d6ab8e7c90f1ca5b0df47b657a2ebbc2"></script>
+  <script type="text/javascript" src="/app/client/app/login/forgetpassword.js?d48744f7c1ea685bd7422f2c78143d5cfdba11fc"></script>
+  <script type="text/javascript" src="/app/client/app/login/register.js?b91b49b428c931edb5dd157e0fa051d9f3a9b261"></script>
+  <script type="text/javascript" src="/app/client/app/login/sign.js?294f38d73fee25946664f20333d1f3c0626f7a9e"></script>
+  <script type="text/javascript" src="/app/client/app/order/myorders.js?a282ce65d7f5a26627cc672bb5582a48e489b3e8"></script>
+  <script type="text/javascript" src="/app/client/app/order/newmyorder.js?ccbe0ea41a3ee4044d86f79cc34f21db8a7ca542"></script>
+  <script type="text/javascript" src="/app/client/app/order/neworder.js?e9b3b9ef807d53f6fa95e5989ebe4573b3f8681b"></script>
+  <script type="text/javascript" src="/app/client/app/order/orderinfo.js?91fe584cb2e98b662fea2db6c60772fa58d77f1e"></script>
+  <script type="text/javascript" src="/app/client/app/order/orderquery.js?89123774b92bc359995e0d9b11e4632302580b5d"></script>
+  <script type="text/javascript" src="/app/client/app/order/orderselectaddress.js?38b216d144fb4c55c91d725f9f0efe8955421e28"></script>
+  <script type="text/javascript" src="/app/client/app/order/orderselectcoupon.js?d85dc3921b18d9633c2f2f9e47aa64ddea6dd96b"></script>
+  <script type="text/javascript" src="/app/client/app/order/orderselectredpackage.js?fd91fc7306b7437a2d5cfa6187cec201d06ee59e"></script>
+  <script type="text/javascript" src="/app/client/app/order/utilop.js?cf63e71d65e676f56501334fe1cf3040c5b7bf49"></script>
+  <script type="text/javascript" src="/app/client/app/product/selectproduct.js?ca3ab14fa039bb0456a58e5846a519dd9be6dfb0"></script>
+  <script type="text/javascript" src="/app/client/app/redpackage/getredpackage.js?6102f964821d151b4645fa1a38e106f60b1047ab"></script>
+  <script type="text/javascript" src="/app/client/app/redpackage/myredpackages.js?244b9a17a4e27e91dc0d819247802049e0960240"></script>
+  <script type="text/javascript" src="/app/client/app/test/test.js?5a265d7f6cac444066c805701d02e6be7037948d"></script>
+  <script type="text/javascript" src="/app/client/app/users/addaddress.js?792d8bcfcf2a0e1d6d53b147bc99a44a260deb8d"></script>
+  <script type="text/javascript" src="/app/client/app/users/updateuseraddress.js?9cc21ac9b5cf23798249912ab2ce6e0943b9bf96"></script>
+  <script type="text/javascript" src="/app/client/app/users/useraddress.js?c9e3b7664c86e588e13216cb205b12e6b4e6b19f"></script>
+  <script type="text/javascript" src="/app/client/app/oputil.js?83015615d25727563da23ff3f7cc2f0234cb3f81"></script>
+  <script type="text/javascript" src="/app/client/app/zh-ch.js?ff1aa2a0d2fec9f1b2a20a1fbfd50c7d4f8c3d7e"></script>
+  <script type="text/javascript" src="/app/startup.js?aa12e5e6f68619e63c2a561e47aea530002cb02d"></script>
+  <script type="text/javascript" src="/packages/service-configuration.js?4940b1e4138b53dafd1a46ae719ad64bec87e957"></script>
+
+
+  <title></title>
+</head>
+
+<body>
+  
+</body>
 </html>

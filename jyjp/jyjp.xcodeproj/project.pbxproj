@@ -25,6 +25,7 @@
 		163512D41B85B09E00AE3027 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163512D31B85B09E00AE3027 /* JavaScriptCore.framework */; };
 		163512D61B85B0CB00AE3027 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163512D51B85B0CB00AE3027 /* ImageIO.framework */; };
 		163512D81B85B0D400AE3027 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163512D71B85B0D400AE3027 /* CoreText.framework */; };
+		163BA4EA1BC8E4830040AA23 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163BA4E91BC8E4830040AA23 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
 		164049341B4691AC008EE664 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1640492F1B4691AC008EE664 /* WebViewJavascriptBridge.js.txt */; };
 		164049351B4691AC008EE664 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 164049301B4691AC008EE664 /* WebViewJavascriptBridge.m */; };
 		164049361B4691AC008EE664 /* WebViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 164049331B4691AC008EE664 /* WebViewProxy.m */; };
@@ -40,15 +41,7 @@
 		164348861B86BC240014495D /* SimpleImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164348841B86BC240014495D /* SimpleImageCache.swift */; };
 		1648F7781B85AB890093F4A5 /* WebJsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1648F7771B85AB890093F4A5 /* WebJsHelper.swift */; };
 		167B7AC91B26F6DA00F56788 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167B7AC71B26F6DA00F56788 /* LaunchScreen.xib */; };
-		16AFB4401B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB4371B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift */; };
-		16AFB4411B4696E6009CB2BF /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB4381B4696E6009CB2BF /* Alamofire.swift */; };
-		16AFB4421B4696E6009CB2BF /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB43A1B4696E6009CB2BF /* QRCodeReader.swift */; };
-		16AFB4431B4696E6009CB2BF /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB43B1B4696E6009CB2BF /* QRCodeViewController.swift */; };
-		16AFB4441B4696E6009CB2BF /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB43C1B4696E6009CB2BF /* ReaderOverlayView.swift */; };
-		16AFB4451B4696E6009CB2BF /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB43D1B4696E6009CB2BF /* SwitchCameraButton.swift */; };
-		16AFB4461B4696E6009CB2BF /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB43E1B4696E6009CB2BF /* SwiftyJSON.swift */; };
 		16AFB44A1B469718009CB2BF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB4481B469718009CB2BF /* MapViewController.swift */; };
-		16AFB44B1B469718009CB2BF /* QRCodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB4491B469718009CB2BF /* QRCodeHelper.swift */; };
 		16AFB44D1B469733009CB2BF /* Locationmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB44C1B469733009CB2BF /* Locationmanager.swift */; };
 		16AFB44F1B469772009CB2BF /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFB44E1B469772009CB2BF /* WebPageViewController.swift */; };
 		16EFCFDC1B9D1E97008451D4 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EFCFDB1B9D1E97008451D4 /* splash.png */; };
@@ -101,6 +94,7 @@
 		163512D31B85B09E00AE3027 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		163512D51B85B0CB00AE3027 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		163512D71B85B0D400AE3027 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		163BA4E91BC8E4830040AA23 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		1640492E1B4691AC008EE664 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
 		1640492F1B4691AC008EE664 /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
 		164049301B4691AC008EE664 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
@@ -121,15 +115,7 @@
 		16587DAD1B734E6C009ADC1A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		167B7AC81B26F6DA00F56788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		16AFB4351B469630009CB2BF /* jyjp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "jyjp-Bridging-Header.h"; path = "jyjp/jyjp-Bridging-Header.h"; sourceTree = "<group>"; };
-		16AFB4371B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire-SwiftyJSON.swift"; sourceTree = "<group>"; };
-		16AFB4381B4696E6009CB2BF /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
-		16AFB43A1B4696E6009CB2BF /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
-		16AFB43B1B4696E6009CB2BF /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
-		16AFB43C1B4696E6009CB2BF /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
-		16AFB43D1B4696E6009CB2BF /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
-		16AFB43E1B4696E6009CB2BF /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		16AFB4481B469718009CB2BF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		16AFB4491B469718009CB2BF /* QRCodeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeHelper.swift; sourceTree = "<group>"; };
 		16AFB44C1B469733009CB2BF /* Locationmanager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locationmanager.swift; sourceTree = "<group>"; };
 		16AFB44E1B469772009CB2BF /* WebPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
 		16EFCFDB1B9D1E97008451D4 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
@@ -291,24 +277,10 @@
 		16AFB4361B4696E6009CB2BF /* thirdparty */ = {
 			isa = PBXGroup;
 			children = (
+				163BA4E91BC8E4830040AA23 /* SwiftyJSON.swift */,
 				164348841B86BC240014495D /* SimpleImageCache.swift */,
-				16AFB4371B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift */,
-				16AFB4381B4696E6009CB2BF /* Alamofire.swift */,
-				16AFB4391B4696E6009CB2BF /* QRCodeReader */,
-				16AFB43E1B4696E6009CB2BF /* SwiftyJSON.swift */,
 			);
 			path = thirdparty;
-			sourceTree = "<group>";
-		};
-		16AFB4391B4696E6009CB2BF /* QRCodeReader */ = {
-			isa = PBXGroup;
-			children = (
-				16AFB43A1B4696E6009CB2BF /* QRCodeReader.swift */,
-				16AFB43B1B4696E6009CB2BF /* QRCodeViewController.swift */,
-				16AFB43C1B4696E6009CB2BF /* ReaderOverlayView.swift */,
-				16AFB43D1B4696E6009CB2BF /* SwitchCameraButton.swift */,
-			);
-			path = QRCodeReader;
 			sourceTree = "<group>";
 		};
 		5FAEB2C91B215B0200A9046A = {
@@ -321,7 +293,6 @@
 				16AFB44E1B469772009CB2BF /* WebPageViewController.swift */,
 				16AFB44C1B469733009CB2BF /* Locationmanager.swift */,
 				16AFB4481B469718009CB2BF /* MapViewController.swift */,
-				16AFB4491B469718009CB2BF /* QRCodeHelper.swift */,
 				16AFB4361B4696E6009CB2BF /* thirdparty */,
 				5FAEB2D41B215B0200A9046A /* jyjp */,
 				5FAEB2EA1B215B0300A9046A /* jyjpTests */,
@@ -425,6 +396,8 @@
 		5FAEB2CA1B215B0200A9046A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = jyjp.xiaheng.net;
 				TargetAttributes = {
@@ -492,22 +465,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				16AFB44F1B469772009CB2BF /* WebPageViewController.swift in Sources */,
-				16AFB4441B4696E6009CB2BF /* ReaderOverlayView.swift in Sources */,
 				164049361B4691AC008EE664 /* WebViewProxy.m in Sources */,
-				16AFB4461B4696E6009CB2BF /* SwiftyJSON.swift in Sources */,
+				163BA4EA1BC8E4830040AA23 /* SwiftyJSON.swift in Sources */,
 				164049351B4691AC008EE664 /* WebViewJavascriptBridge.m in Sources */,
 				5FAEB2D81B215B0200A9046A /* AppDelegate.swift in Sources */,
 				16AFB44A1B469718009CB2BF /* MapViewController.swift in Sources */,
 				1648F7781B85AB890093F4A5 /* WebJsHelper.swift in Sources */,
-				16AFB4401B4696E6009CB2BF /* Alamofire-SwiftyJSON.swift in Sources */,
 				164049381B4691F9008EE664 /* WebBaseViewController.swift in Sources */,
 				16AFB44D1B469733009CB2BF /* Locationmanager.swift in Sources */,
-				16AFB44B1B469718009CB2BF /* QRCodeHelper.swift in Sources */,
-				16AFB4431B4696E6009CB2BF /* QRCodeViewController.swift in Sources */,
-				16AFB4421B4696E6009CB2BF /* QRCodeReader.swift in Sources */,
-				16AFB4451B4696E6009CB2BF /* SwitchCameraButton.swift in Sources */,
 				164348861B86BC240014495D /* SimpleImageCache.swift in Sources */,
-				16AFB4411B4696E6009CB2BF /* Alamofire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,6 +604,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Nanjing Xiaheng Network System Co., Ltd. (24N474AU9T)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nanjing Xiaheng Network System Co., Ltd. (24N474AU9T)";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -655,8 +622,9 @@
 					"$(PROJECT_DIR)/libraries/extends/WeChatSDK",
 				);
 				OTHER_LDFLAGS = "-fobjc-arc";
+				PRODUCT_BUNDLE_IDENTIFIER = yunqi.czjcd.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "873832ac-bf1d-465c-b75e-51f3fbf8cbe7";
+				PROVISIONING_PROFILE = "ad184449-5b37-4304-a6dd-e8217cdceec6";
 				SWIFT_OBJC_BRIDGING_HEADER = "jyjp/jyjp-Bridging-Header.h";
 			};
 			name = Debug;
@@ -667,6 +635,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Nanjing Xiaheng Network System Co., Ltd. (24N474AU9T)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nanjing Xiaheng Network System Co., Ltd. (24N474AU9T)";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -684,8 +653,9 @@
 					"$(PROJECT_DIR)/libraries/extends/WeChatSDK",
 				);
 				OTHER_LDFLAGS = "-fobjc-arc";
+				PRODUCT_BUNDLE_IDENTIFIER = yunqi.czjcd.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "873832ac-bf1d-465c-b75e-51f3fbf8cbe7";
+				PROVISIONING_PROFILE = "ad184449-5b37-4304-a6dd-e8217cdceec6";
 				SWIFT_OBJC_BRIDGING_HEADER = "jyjp/jyjp-Bridging-Header.h";
 			};
 			name = Release;

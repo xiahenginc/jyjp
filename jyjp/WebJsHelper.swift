@@ -12,7 +12,7 @@ typealias onQQAutologinResult = (JSON!) ->Void
 class WebJsHelper:NSObject, TencentSessionDelegate {
     var bridge: WebViewJavascriptBridge?
     var myWebView:UIWebView?
-    var qrCode:QRCodeHelper?
+    //var qrCode:QRCodeHelper?
     var _tencentOAuth:TencentOAuth?
     var qqautologinresult:onQQAutologinResult?
     
@@ -24,19 +24,19 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
             data, responseCallback in
         })
         
-        bridge?.registerHandler("qr" ,handler: {
-        data, responseCallback in
-        //点击QR二维码
-            
-            func onScanTxt(txt:String!)->Void{
-                let jsonRes = JSON(["type":"res","param1":"success","param2":txt])
-                responseCallback(jsonRes.object)
-            }
-            self.qrCode = QRCodeHelper()
-            self.qrCode?.delegate = onScanTxt
-            self.qrCode?.showView(vc)
-        
-        })
+//        bridge?.registerHandler("qr" ,handler: {
+//        data, responseCallback in
+//        //点击QR二维码
+//            
+//            func onScanTxt(txt:String!)->Void{
+//                let jsonRes = JSON(["type":"res","param1":"success","param2":txt])
+//                responseCallback(jsonRes.object)
+//            }
+//            self.qrCode = QRCodeHelper()
+//            self.qrCode?.delegate = onScanTxt
+//            self.qrCode?.showView(vc)
+//        
+//        })
         
         bridge?.registerHandler("ras" ,handler: {
         data, responseCallback in
@@ -57,7 +57,7 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
             let json = JSON(data)
             
             if let paramurl = json["param1"].string{
-            println("recv json===>\(paramurl)")
+            print("recv json===>\(paramurl)")
             if let paramaction = json["param2"].string{
             if paramaction == "self"{
             vc?.url = paramurl
@@ -91,7 +91,7 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
         if issuccess {
             txt = "\(location!.coordinate.latitude),\(location!.coordinate.longitude)"
             resultTxt = "success"
-            println("\(txt)")
+            
         }
         
         let jsonRes = JSON(["type":"res","param1":resultTxt,"param2":txt])
@@ -148,13 +148,18 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
             if let param1 = json["param1"].string {
 
                 var data = param1.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)
-                var paramjson = NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers, error: nil) as! NSDictionary
-             
-                titlestr = paramjson["title"] as! String
-                contentstr = paramjson["content"] as! String
-                urlstr = paramjson["url"] as! String
-                urlimg = paramjson["imageurl"] as! String
-                println("title \(titlestr),contentstr:\(contentstr),urlstr:\(urlstr),urlimg:\(urlimg)")
+                do{
+                    var paramjson = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers) as! NSDictionary
+                 
+                    titlestr = paramjson["title"] as! String
+                    contentstr = paramjson["content"] as! String
+                    urlstr = paramjson["url"] as! String
+                    urlimg = paramjson["imageurl"] as! String
+                    print("title \(titlestr),contentstr:\(contentstr),urlstr:\(urlstr),urlimg:\(urlimg)")
+                }
+                catch{
+                    
+                }
             }
 
             self.ShowShareMenu(vc,title: titlestr,content: contentstr,url:urlstr,urlimg:urlimg)
@@ -254,7 +259,7 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
         kOPEN_PERMISSION_GET_VIP_RICH_INFO,
         kOPEN_PERMISSION_GET_INTIMATE_FRIENDS_WEIBO,
         kOPEN_PERMISSION_MATCH_NICK_TIPS_WEIBO]
-        self._tencentOAuth?.authorize(permissions as! [AnyObject],inSafari:false)
+        self._tencentOAuth?.authorize(permissions as [AnyObject],inSafari:false)
         
         func onLoginResult(jsonRes:JSON!)->Void{
             responseCallback(jsonRes.object)
@@ -266,7 +271,7 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
     
     func tencentDidLogin()
     {
-        var txt = "{\"accessToken\":\"\(self._tencentOAuth!.accessToken)\",\"openId\":\"\(self._tencentOAuth!.openId)\",\"expirationDate\":\"\(self._tencentOAuth!.expirationDate.description)\"}"
+        let txt = "{\"accessToken\":\"\(self._tencentOAuth!.accessToken)\",\"openId\":\"\(self._tencentOAuth!.openId)\",\"expirationDate\":\"\(self._tencentOAuth!.expirationDate.description)\"}"
         //
         //  var txt = "\(self._tencentOAuth?.accessToken),\(self._tencentOAuth?.openId)"
         let jsonRes = JSON(["type":"res","param1":"success","param2":txt])
@@ -315,9 +320,9 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
                 
                 switch state{
                     
-                case SSDKResponseState.Success: println("分享成功")
-                case SSDKResponseState.Fail:    println("分享失败,错误描述:\(error)")
-                case SSDKResponseState.Cancel:  println("分享取消")
+                case SSDKResponseState.Success: print("分享成功")
+                case SSDKResponseState.Fail:    print("分享失败,错误描述:\(error)")
+                case SSDKResponseState.Cancel:  print("分享取消")
                     
                 default:
                     break
@@ -325,7 +330,7 @@ class WebJsHelper:NSObject, TencentSessionDelegate {
             }
             
         };
-        var url:NSURL = NSURL(string:urlimg!)!
+        let url:NSURL = NSURL(string:urlimg!)!
         SimpleCache.sharedInstance.getImage(url,completion:downloadok);
         
     }

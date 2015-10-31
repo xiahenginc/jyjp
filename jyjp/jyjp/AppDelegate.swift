@@ -47,17 +47,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate,WXApiDelegate {
     
     func wxlogin(reqJson:JSON,vc:UIViewController,block:onWxLoginResult){
         self.wxloginResult = block
-        var req = SendAuthReq()
+        let req = SendAuthReq()
         req.scope = "snsapi_message,snsapi_userinfo,snsapi_friend,snsapi_contact"
         req.state = reqJson["param1"].string
         req.openID = reqJson["param2"].string
         WXApi.sendAuthReq(req, viewController: vc, delegate: self)
     }
     func onReq(req: BaseReq!) {
-        println("onReq called")
+        print("onReq called")
     }
     func onResp(resp: BaseResp!) {
-        println("onResp called")
+        print("onResp called")
         if resp is SendAuthResp{
             let result = resp as! SendAuthResp
             var txtContent = ""
@@ -102,7 +102,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,WXApiDelegate {
                 if (result != nil) {
                     print("\(result)")
                     txt = result["memo"] as! String
-                    var status = result["resultStatus"] as! NSObject
+                    let status = result["resultStatus"] as! NSObject
                     if ("\(status)" == "9000") {
                         
                         resultTxt = "success"
