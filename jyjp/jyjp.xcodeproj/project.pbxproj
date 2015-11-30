@@ -25,7 +25,7 @@
 		163512D41B85B09E00AE3027 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163512D31B85B09E00AE3027 /* JavaScriptCore.framework */; };
 		163512D61B85B0CB00AE3027 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163512D51B85B0CB00AE3027 /* ImageIO.framework */; };
 		163512D81B85B0D400AE3027 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163512D71B85B0D400AE3027 /* CoreText.framework */; };
-		163BA4EA1BC8E4830040AA23 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163BA4E91BC8E4830040AA23 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
+		163BA4EA1BC8E4830040AA23 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163BA4E91BC8E4830040AA23 /* SwiftyJSON.swift */; };
 		164049341B4691AC008EE664 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1640492F1B4691AC008EE664 /* WebViewJavascriptBridge.js.txt */; };
 		164049351B4691AC008EE664 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 164049301B4691AC008EE664 /* WebViewJavascriptBridge.m */; };
 		164049361B4691AC008EE664 /* WebViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 164049331B4691AC008EE664 /* WebViewProxy.m */; };
