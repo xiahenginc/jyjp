@@ -41,51 +41,51 @@ class WebBaseViewController: UIViewController,UIWebViewDelegate {
         refreshPage()
     }
     
-
-    // 开始加载的时候执行该方法
-    func webViewDidStartLoad(webView: UIWebView){
-        print("webViewDidStartLoad");
-//        var widthimg = 140;
-//        self.img1 = UIImageView(frame: CGRect(x: 0, y: 0, width: widthimg, height: widthimg))
-//       // self.img1 = UIImageView()
-//        self.img1?.image = UIImage(named: "wb_loading_frame1")
-//        self.img1?.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/2)
-//      
-//        self.img2 = UIImageView(frame: CGRect(x: 0, y: 0, width: widthimg, height: widthimg))
-//      //  self.img2 = UIImageView()
-//        self.img2?.image = UIImage(named: "wb_loading_frame2")
-//        self.img2?.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/2)
-//        self.img1?.backgroundColor = UIColor.clearColor()
-//        self.img2?.backgroundColor = UIColor.clearColor()
-//        self.myWebView?.addSubview(self.img1!)
-//        self.myWebView?.addSubview(self.img2!)
-//        self.img1?.hidden = true
-//        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "timingFunction:", userInfo: nil, repeats: true)
-//        self.timer?.fire()
-    }
-    
-
-    
-//    func dismissPreloader(){
-//        self.timer?.invalidate()
-//        self.img1?.removeFromSuperview()
-//        self.img2?.removeFromSuperview()
-//        
-//    }
 //
+//    // 开始加载的时候执行该方法
+//    func webViewDidStartLoad(webView: UIWebView){
+//        print("webViewDidStartLoad");
+////        var widthimg = 140;
+////        self.img1 = UIImageView(frame: CGRect(x: 0, y: 0, width: widthimg, height: widthimg))
+////       // self.img1 = UIImageView()
+////        self.img1?.image = UIImage(named: "wb_loading_frame1")
+////        self.img1?.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/2)
+////      
+////        self.img2 = UIImageView(frame: CGRect(x: 0, y: 0, width: widthimg, height: widthimg))
+////      //  self.img2 = UIImageView()
+////        self.img2?.image = UIImage(named: "wb_loading_frame2")
+////        self.img2?.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/2)
+////        self.img1?.backgroundColor = UIColor.clearColor()
+////        self.img2?.backgroundColor = UIColor.clearColor()
+////        self.myWebView?.addSubview(self.img1!)
+////        self.myWebView?.addSubview(self.img2!)
+////        self.img1?.hidden = true
+////        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "timingFunction:", userInfo: nil, repeats: true)
+////        self.timer?.fire()
+//    }
+//    
 //
-//    func timingFunction(timer: NSTimer) {
-//        self.imgindex = !self.imgindex
-//        self.img1?.hidden = self.imgindex
-//        self.img2?.hidden = !self.imgindex
+//    
+////    func dismissPreloader(){
+////        self.timer?.invalidate()
+////        self.img1?.removeFromSuperview()
+////        self.img2?.removeFromSuperview()
+////        
+////    }
+////
+////
+////    func timingFunction(timer: NSTimer) {
+////        self.imgindex = !self.imgindex
+////        self.img1?.hidden = self.imgindex
+////        self.img2?.hidden = !self.imgindex
+////    }
+//    
+//    // 加载完成的时候执行该方法
+//    func webViewDidFinishLoad(webView: UIWebView){
+//        print("webViewDidFinishLoad")
+//     //   self.dismissPreloader();
 //    }
     
-    // 加载完成的时候执行该方法
-    func webViewDidFinishLoad(webView: UIWebView){
-        print("webViewDidFinishLoad")
-     //   self.dismissPreloader();
-    }
-       
     func refreshPage(){
        // loadurl()
         print("refresh page:\(self.myWebView?.request!.URL!.absoluteString)")

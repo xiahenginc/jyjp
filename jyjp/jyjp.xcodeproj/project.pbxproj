@@ -25,7 +25,7 @@
 		163512D41B85B09E00AE3027 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163512D31B85B09E00AE3027 /* JavaScriptCore.framework */; };
 		163512D61B85B0CB00AE3027 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163512D51B85B0CB00AE3027 /* ImageIO.framework */; };
 		163512D81B85B0D400AE3027 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163512D71B85B0D400AE3027 /* CoreText.framework */; };
-		163BA4EA1BC8E4830040AA23 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163BA4E91BC8E4830040AA23 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
+		163BA4EA1BC8E4830040AA23 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163BA4E91BC8E4830040AA23 /* SwiftyJSON.swift */; };
 		164049341B4691AC008EE664 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1640492F1B4691AC008EE664 /* WebViewJavascriptBridge.js.txt */; };
 		164049351B4691AC008EE664 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 164049301B4691AC008EE664 /* WebViewJavascriptBridge.m */; };
 		164049361B4691AC008EE664 /* WebViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 164049331B4691AC008EE664 /* WebViewProxy.m */; };
@@ -602,8 +602,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Nanjing Xiaheng Network System Co., Ltd. (24N474AU9T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nanjing Xiaheng Network System Co., Ltd. (24N474AU9T)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -622,9 +622,9 @@
 					"$(PROJECT_DIR)/libraries/extends/WeChatSDK",
 				);
 				OTHER_LDFLAGS = "-fobjc-arc";
-				PRODUCT_BUNDLE_IDENTIFIER = yunqi.czjcd.com;
+				PRODUCT_BUNDLE_IDENTIFIER = grwweb.xiaheng.net;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ad184449-5b37-4304-a6dd-e8217cdceec6";
+				PROVISIONING_PROFILE = "e527afd3-9dac-4bde-8784-7e1b84239672";
 				SWIFT_OBJC_BRIDGING_HEADER = "jyjp/jyjp-Bridging-Header.h";
 			};
 			name = Debug;
@@ -633,8 +633,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Nanjing Xiaheng Network System Co., Ltd. (24N474AU9T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nanjing Xiaheng Network System Co., Ltd. (24N474AU9T)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -653,9 +653,9 @@
 					"$(PROJECT_DIR)/libraries/extends/WeChatSDK",
 				);
 				OTHER_LDFLAGS = "-fobjc-arc";
-				PRODUCT_BUNDLE_IDENTIFIER = yunqi.czjcd.com;
+				PRODUCT_BUNDLE_IDENTIFIER = grwweb.xiaheng.net;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ad184449-5b37-4304-a6dd-e8217cdceec6";
+				PROVISIONING_PROFILE = "e527afd3-9dac-4bde-8784-7e1b84239672";
 				SWIFT_OBJC_BRIDGING_HEADER = "jyjp/jyjp-Bridging-Header.h";
 			};
 			name = Release;
